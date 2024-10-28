@@ -74,12 +74,12 @@ export default function App({ Component, pageProps }) {
             <Navbar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />{" "}
             {/* Pass toggleTheme and isDarkMode to Navbar */}
             <Component {...pageProps} />
+            <Analytics />
             <Footer toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
           </Layout>
         </main>
         <GradientAnimation />
       </ThemeProvider>
-      <Analytics />
     </>
   );
 }
