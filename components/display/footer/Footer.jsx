@@ -116,7 +116,7 @@ function Footer({ toggleTheme, isDarkMode }) {
             />
           </Link>
           <Link
-            href="https://www.instagram.com/geekroom_plaksha/"
+            href="https://github.com/Geek-Room-Plaksha/"
             target="_blank"
             style={{ color: "gray" }}
           >
