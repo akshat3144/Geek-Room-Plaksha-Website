@@ -75,14 +75,14 @@ const blogData = {
         }
       ],
       date: "2024-10-29T00:00:00Z",
-      link: "https://www.instagram.com/p/DBjMB8fSlmF/?img_index=1"
+      link: "https://medium.com/@geekroomplakshacontent/pieces-on-artificial-intelligence-in-the-field-of-healthcare-fde98b4a9dfc"
     }
   ],
   devlogs: [
     {
       title: "Boids Simulation",
       slug: "devlogs",
-      thumbnail: "/images/devlog1.png",
+      thumbnail: "/images/media/devlogs/1.png",
       shortDescription:
         "Discover the fascinating world of Boids simulation by Craig Reynolds, where computational design meets nature. Watch as virtual birds follow simple rules to create complex, organic flocking patterns, demonstrating the beautiful emergence of collective behavior through code.",
       tags: [
@@ -98,7 +98,7 @@ const blogData = {
         }
       ],
       date: "2024-10-04T00:00:00Z",
-      link: "https://www.instagram.com/p/DBjMB8fSlmF/?img_index=1"
+      link: "https://youtu.be/PtPRDd3pdbE"
     }
   ]
 };

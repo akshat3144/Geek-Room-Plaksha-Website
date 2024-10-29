@@ -141,6 +141,7 @@ export const ThemeToggle = styled.div`
   align-items: center;
   cursor: url("/cursors/cursor-pointer.svg") 10 0, auto;
   font-size: 1.5rem;
+
   color: ${({ theme }) => theme.colors.textPrimary};
 
   .sun {
@@ -149,5 +150,15 @@ export const ThemeToggle = styled.div`
 
   .moon {
     color: ${({ theme }) => theme.colors.brandBlue};
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-right: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-right: 0;
+    padding-bottom: 0;
   }
 `;
