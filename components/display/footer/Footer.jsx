@@ -12,12 +12,11 @@ import {
   FooterSocials,
   LogoContainer,
   LogoWrapper,
-  ThemeToggle // Import the styled ThemeToggle
+  ThemeToggleSwitch // Import the styled ThemeToggleSwitch
 } from "./Footer.styled";
 import Typography from "../typography/Typography";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import XIcon from "@mui/icons-material/X";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Avatar from "@/components/avatar/Avatar";
 import { useEffect, useState } from "react";
@@ -138,9 +137,19 @@ function Footer({ toggleTheme, isDarkMode }) {
         </FooterSocialIcons>
       </FooterSocials>
       <FooterMeta>
-        <ThemeToggle onClick={toggleTheme}>
-          {isDarkMode ? <FaSun className="sun" /> : <FaMoon className="moon" />}
-        </ThemeToggle>
+        <div
+          style={{
+            // paddingRight: "2.75rem",
+            paddingBottom: "0.8rem",
+            paddingRight: isMobile ? 0 : "initial"
+            // paddingBottom: isMobile ? "0.8rem" : "initial"
+          }}
+        >
+          <ThemeToggleSwitch onClick={toggleTheme} isDarkMode={isDarkMode}>
+            <FaSun className="icon sun" />
+            <FaMoon className="icon moon" />
+          </ThemeToggleSwitch>
+        </div>
         <Authors>
           <Typography
             variant="bodySmall"

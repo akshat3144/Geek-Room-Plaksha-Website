@@ -136,29 +136,36 @@ export const Authors = styled.div`
   gap: 1em;
 `;
 
-export const ThemeToggle = styled.div`
+export const ThemeToggleSwitch = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
   cursor: url("/cursors/cursor-pointer.svg") 10 0, auto;
-  font-size: 1.5rem;
-
+  font-size: 3rem;
   color: ${({ theme }) => theme.colors.textPrimary};
+  position: relative;
+  width: 90px;
+  height: 40px;
+  background-color: ${({ theme }) => theme.colors.bgSecondary};
+  border-radius: 25px;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 0.3s ease;
+    width: 25px;
+  }
 
   .sun {
+    left: ${({ isDarkMode }) => (isDarkMode ? "5px" : "50px")};
     color: ${({ theme }) => theme.colors.brandYellow};
   }
 
   .moon {
+    left: ${({ isDarkMode }) => (isDarkMode ? "50px" : "5px")};
     color: ${({ theme }) => theme.colors.brandBlue};
-  }
-
-  @media screen and (min-width: 768px) {
-    padding-right: 2.75rem;
-    padding-bottom: 1.75rem;
-  }
-
-  @media screen and (max-width: 767px) {
-    padding-right: 0;
-    padding-bottom: 0.5rem;
   }
 `;
