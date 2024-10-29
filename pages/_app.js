@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import localFont from "next/font/local";
 import { ThemeProvider } from "styled-components";
 import Head from "next/head";
@@ -75,6 +76,7 @@ export default function App({ Component, pageProps }) {
             {/* Pass toggleTheme and isDarkMode to Navbar */}
             <Component {...pageProps} />
             <Analytics />
+            <SpeedInsights />
             <Footer toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
           </Layout>
         </main>
