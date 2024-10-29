@@ -92,25 +92,27 @@ function Navbar({ toggleTheme, isDarkMode }) {
       <NavbarContainer>
         <NavbarInnerContainer>
           <LeftContainer>
-            <LogoContainer onClick={toggleTheme}>
-              <div
-                style={{
-                  width: "100%",
-                  maxWidth: "300px",
-                  height: "auto",
-                  cursor: `url('/cursors/cursor-pointer.svg'), auto`
-                }}
-              >
-                <Image
-                  src={isDarkMode ? DarkModeLogo : LightModeLogo}
-                  alt={"Geekroom Logo"}
-                  layout="responsive"
-                  width={500}
-                  height={60}
-                  priority={true}
-                />
-              </div>
-            </LogoContainer>
+            <Link href="/">
+              <LogoContainer>
+                <div
+                  style={{
+                    width: "100%",
+                    maxWidth: "300px",
+                    height: "auto",
+                    cursor: `url('/cursors/cursor-pointer.svg'), auto`
+                  }}
+                >
+                  <Image
+                    src={isDarkMode ? DarkModeLogo : LightModeLogo}
+                    alt={"Geekroom Logo"}
+                    layout="responsive"
+                    width={500}
+                    height={60}
+                    priority={true}
+                  />
+                </div>
+              </LogoContainer>
+            </Link>
           </LeftContainer>
           <RightContainer>
             <NavbarLinkContainer>
@@ -155,14 +157,16 @@ function Navbar({ toggleTheme, isDarkMode }) {
                   priority={true}
                 />
               </div>
-              <CloseIcon
-                sx={{
-                  color: theme.colors.contentSecondary,
-                  cursor: "pointer",
-                  fontSize: "1.8rem"
-                }}
-                onClick={handleToggle}
-              />
+              <div style={{ paddingLeft: "60px" }}>
+                <CloseIcon
+                  sx={{
+                    color: theme.colors.contentSecondary,
+                    cursor: "pointer",
+                    fontSize: "1.8rem"
+                  }}
+                  onClick={handleToggle}
+                />
+              </div>
             </LogoContainer>
           </TopContainer>
           <BottomContainer>{menuLinks}</BottomContainer>
