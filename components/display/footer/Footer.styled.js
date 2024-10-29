@@ -135,3 +135,19 @@ export const Authors = styled.div`
   align-items: center;
   gap: 1em;
 `;
+
+export const ThemeToggle = styled.div`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: ${({ theme }) => theme.colors.textPrimary};
+
+  .sun {
+    color: ${({ theme }) => theme.colors.brandYellow};
+  }
+
+  .moon {
+    color: ${({ theme }) => theme.colors.brandBlue};
+  }
+`;

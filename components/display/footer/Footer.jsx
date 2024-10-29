@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { FaSun, FaMoon } from "react-icons/fa"; // Import Font Awesome icons
 
 import {
   Authors,
@@ -10,7 +11,8 @@ import {
   FooterSocialIcons,
   FooterSocials,
   LogoContainer,
-  LogoWrapper
+  LogoWrapper,
+  ThemeToggle // Import the styled ThemeToggle
 } from "./Footer.styled";
 import Typography from "../typography/Typography";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -136,6 +138,9 @@ function Footer({ toggleTheme, isDarkMode }) {
         </FooterSocialIcons>
       </FooterSocials>
       <FooterMeta>
+        <ThemeToggle onClick={toggleTheme}>
+          {isDarkMode ? <FaSun className="sun" /> : <FaMoon className="moon" />}
+        </ThemeToggle>
         <Authors>
           <Typography
             variant="bodySmall"
