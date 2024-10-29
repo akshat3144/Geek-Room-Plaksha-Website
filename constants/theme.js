@@ -2,31 +2,12 @@
 // #f15b22 GR ORANGE
 // #e7e8e7 GR GREY
 
-// navbarData,style - color: ${({ theme }) => theme.colors.brandBlue};
-
-// GDSC
-// export const lightTheme = {
-//   type: "light",
-//   colors: {
-//     brandRed: "#EA4335",
-//     brandYellow: "#FBBC04",
-//     brandGreen: "#0F9D58",
-//     brandBlue: "#4285F4",
-//     bgPrimary: "#FFFFFF",
-//     bgSecondary: "#E9E9E9",
-//     bgTertiary: "#e9e9e9",
-//     contentPrimary: "#000000",
-//     contentSecondary: "#6e6e6e"
-//   }
-// };
-
-// GR ADJUSTED
 export const lightTheme = {
   type: "light",
   colors: {
-    brandRed: "#f15b22", //
+    brandRed: "#f15b22", // EA4335
     brandYellow: "#FBBC04",
-    brandGreen: "#00acb2", //
+    brandGreen: "#00acb2", // 0F9D58
     brandBlue: "#4285F4",
     bgPrimary: "#FFFFFF",
     bgSecondary: "#E9E9E9",
@@ -36,23 +17,6 @@ export const lightTheme = {
   }
 };
 
-// GDSC
-// export const darkTheme = {
-//   type: "dark",
-//   colors: {
-//     brandRed: "#EA4335",
-//     brandYellow: "#FBBC04",
-//     brandGreen: "#0F9D58",
-//     brandBlue: "#4285F4",
-//     bgPrimary: "#131313",
-//     bgSecondary: "#292929",
-//     bgTertiary: "#e9e9e9",
-//     contentPrimary: "#FFFFFF",
-//     contentSecondary: "#858585"
-//   }
-// };
-
-// GR ADJUSTED
 export const darkTheme = {
   type: "dark",
   colors: {
