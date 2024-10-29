@@ -153,12 +153,12 @@ export const ThemeToggle = styled.div`
   }
 
   @media screen and (min-width: 768px) {
-    padding-right: 2.5rem;
-    padding-bottom: 2rem;
+    padding-right: 2.75rem;
+    padding-bottom: 1.75rem;
   }
 
   @media screen and (max-width: 767px) {
     padding-right: 0;
-    padding-bottom: 0;
+    padding-bottom: 0.5rem;
   }
 `;
