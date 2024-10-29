@@ -3,7 +3,7 @@ const blogData = {
     {
       title: "#01",
       slug: "newsletters",
-      thumbnail: "/images/newsletters/01.png",
+      thumbnail: "/images/media/newsletters/01.png",
       shortDescription:
         "Latest tech updates featuring Google's nuclear-powered AI centers, Meta's MovieGen AI breakthrough, SpaceX's innovative rocket recovery system, and FTC's new subscription cancellation rules.",
       tags: [
@@ -41,19 +41,41 @@ const blogData = {
   ],
   blogs: [
     {
-      title: "Blog 1",
+      title: "Pieces on “Artificial Intelligence in the field of Healthcare”",
       slug: "blogs",
-      thumbnail: "/images/blog1.png",
-      shortDescription: "This is a short description of blog 1.",
-      tags: [{ label: "Tag5" }, { label: "Tag6" }],
+      thumbnail: "/images/media/blog/01.png",
+      shortDescription:
+        "Role of AI in healthcare, covering its history, groundbreaking innovations, ethical challenges, and the latest advancements in health-tech.",
+      tags: [
+        { label: "AI" },
+        { label: "Healthcare" },
+        { label: "Innovation" },
+        { label: "Ethics" }
+      ],
       authors: [
         {
-          username: "author3",
-          name: "Author 3",
-          image: "/images/author3.png"
+          username: "Trinav",
+          name: "Trinav",
+          image: "/images/team/trinav.jpg"
+        },
+        {
+          username: "Proshita",
+          name: "Proshita",
+          image: "/images/team/proshita.png"
+        },
+        {
+          username: "Kuhuk",
+          name: "Kuhuk",
+          image: "/images/team/kuhuk.png"
+        },
+        {
+          username: "Shreya",
+          name: "Shreya",
+          image: "/images/team/shreya.png"
         }
       ],
-      date: "2023-10-03T00:00:00Z"
+      date: "2024-10-29T00:00:00Z",
+      link: "https://www.instagram.com/p/DBjMB8fSlmF/?img_index=1"
     }
   ],
   devlogs: [
@@ -72,10 +94,11 @@ const blogData = {
         {
           username: "Suraj",
           name: "Suraj",
-          image: "/images/team/suraj.jpg"
+          image: "/images/team/Suraj.jpg"
         }
       ],
-      date: "2024-10-04T00:00:00Z"
+      date: "2024-10-04T00:00:00Z",
+      link: "https://www.instagram.com/p/DBjMB8fSlmF/?img_index=1"
     }
   ]
 };
