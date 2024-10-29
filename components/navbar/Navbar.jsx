@@ -103,7 +103,7 @@ function Navbar({ toggleTheme, isDarkMode }) {
               >
                 <Image
                   src={isDarkMode ? DarkModeLogo : LightModeLogo}
-                  alt={"GDSC Logo"}
+                  alt={"Geekroom Logo"}
                   layout="responsive"
                   width={500}
                   height={60}
@@ -148,7 +148,7 @@ function Navbar({ toggleTheme, isDarkMode }) {
               <div style={{ width: "100%", maxWidth: "300px", height: "auto" }}>
                 <Image
                   src={isDarkMode ? DarkModeLogo : LightModeLogo}
-                  alt={"GDSC Logo"}
+                  alt={"Geekroom Logo"}
                   layout="responsive"
                   width={500}
                   height={60}

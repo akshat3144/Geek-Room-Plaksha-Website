@@ -205,7 +205,6 @@ export const FilterCard = styled(motion.div)`
     padding: 0.5em 1em;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.2);
   }
 `;
 
