@@ -139,7 +139,7 @@ export const Authors = styled.div`
 export const ThemeToggle = styled.div`
   display: flex;
   align-items: center;
-  cursor: pointer;
+  cursor: url("/cursors/cursor-pointer.svg") 10 0, auto;
   font-size: 1.5rem;
   color: ${({ theme }) => theme.colors.textPrimary};
 
