@@ -40,7 +40,7 @@ const teamData = {
           "https://www.linkedin.com/in/arunachalam-vijayanand-42a263244/",
         image: "/images/team/arun.jpg"
       },
-      role: "Emerging-Tech Lead"
+      role: "'Emerging-Tech' Lead"
     },
     {
       id: 5,
