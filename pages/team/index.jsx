@@ -59,17 +59,17 @@ const teamData = {
           "https://www.linkedin.com/in/trinav-prasad-talukdar-44b34428b/",
         image: "/images/team/trinav.jpg"
       },
-      role: "Content Lead"
+      role: "Content Co-Lead"
     },
-    // {
-    //   id: 7,
-    //   profile: {
-    //     name: "Suraj Dayma",
-    //     profileLink: "https://www.linkedin.com/in/surajdayma/",
-    //     image: "/images/team/Suraj.jpg"
-    //   },
-    //   role: "Co-Content Lead"
-    // },
+    {
+      id: 7,
+      profile: {
+        name: "Suraj Dayma",
+        profileLink: "https://www.linkedin.com/in/surajdayma/",
+        image: "/images/team/Suraj.jpg"
+      },
+      role: "Content Co-Lead"
+    },
     {
       id: 8,
       profile: {

@@ -82,13 +82,14 @@ const blogData = {
     {
       title: "Boids Simulation",
       slug: "devlogs",
-      thumbnail: "/images/media/devlogs/1.png",
+      thumbnail: "/images/media/devlogs/01.png",
       shortDescription:
         "Discover the fascinating world of Boids simulation by Craig Reynolds, where computational design meets nature. Watch as virtual birds follow simple rules to create complex, organic flocking patterns, demonstrating the beautiful emergence of collective behavior through code.",
       tags: [
         { label: "Unity" },
         { label: "Computational Design" },
-        { label: "Emergent Behaviour" }
+        { label: "Emergent Behaviour" },
+        { label: "Flocking Simulation" }
       ],
       authors: [
         {
@@ -98,7 +99,7 @@ const blogData = {
         }
       ],
       date: "2024-10-04T00:00:00Z",
-      link: "https://youtu.be/PtPRDd3pdbE"
+      link: "https://www.youtube.com/watch?v=s2U37q7YToU"
     }
   ]
 };
