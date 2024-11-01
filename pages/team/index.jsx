@@ -237,6 +237,15 @@ const teamData = {
         image: "/images/team/rishaan.png"
       },
       role: "Tech"
+    },
+    {
+      id: 26,
+      profile: {
+        name: "Dhruv Pande",
+        profileLink: "https://www.linkedin.com/in/dhruv-pande-9a730b256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        image: "/images/team/dhruv.jpg"
+      },
+      role: "Tech"
     }
   ]
 };
