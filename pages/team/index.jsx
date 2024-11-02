@@ -245,7 +245,7 @@ const teamData = {
         profileLink: "https://www.linkedin.com/in/dhruv-pande-9a730b256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         image: "/images/team/dhruv.jpg"
       },
-      role: "Tech"
+      role: "Marketing & Design"
     }
   ]
 };
