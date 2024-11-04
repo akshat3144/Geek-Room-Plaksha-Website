@@ -138,7 +138,9 @@ function EventPage({ eventData }) {
                     Registration
                   </Typography>
                   <Typography variant="h4">
-                    {capitalize(eventData.status)}
+                    {/* {capitalize(eventData.status)} */}
+                    {eventData.status === "upcoming" && capitalize("Open")}
+                    {eventData.status === "closed" && capitalize("closed")}
                   </Typography>
                 </InfoModalRegistration>
                 {eventData.registrationLink && (

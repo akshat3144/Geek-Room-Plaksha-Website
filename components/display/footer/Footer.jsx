@@ -18,6 +18,7 @@ import Typography from "../typography/Typography";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Avatar from "@/components/avatar/Avatar";
 import { useEffect, useState } from "react";
 import { devices, lightTheme } from "@/constants/theme";
@@ -122,6 +123,24 @@ function Footer({ toggleTheme, isDarkMode }) {
             style={{ color: "gray" }}
           >
             <GitHubIcon
+              style={{ marginBottom: "-5px" }}
+              sx={{
+                fontSize: 25,
+                transition: "all 0.2s ease-in-out",
+
+                "&:hover": {
+                  transform: "translate(0, -1px)",
+                  color: "#E1306C"
+                }
+              }}
+            />
+          </Link>
+          <Link
+            href="https://chat.whatsapp.com/KLsOEWvVMGEBbcxNqxIInD"
+            target="_blank"
+            style={{ color: "gray" }}
+          >
+            <WhatsAppIcon
               style={{ marginBottom: "-5px" }}
               sx={{
                 fontSize: 25,
