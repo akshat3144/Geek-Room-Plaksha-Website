@@ -4,7 +4,7 @@ const staticEventsData = [
     title: "TensorFlow Workshop",
     shortDescription:
       "Our beginner-friendly TensorFlow Workshop to dive into the world’s most widely-used deep learning framework!",
-    thumbnail: "/images/events/tensorflow/image.png",
+    thumbnail: "/images/events/tensorflow/poster1.png",
     coverPhoto: "/images/events/tensorflow/cover.png",
     description:
       "<p>Our beginner-friendly TensorFlow Workshop to dive into the world’s most widely-used open-source deep learning framework! This hands-on session will introduce you to the basics of neural networks and guide you through building your very first model. With no prerequisites or installations required, participants can easily follow along as we explore real-world applications, interactive exercises, and key concepts in deep learning. Perfect for those new to AI, this workshop provides a practical introduction to TensorFlow and a foundation for your journey in machine learning and artificial intelligence.</p>",
