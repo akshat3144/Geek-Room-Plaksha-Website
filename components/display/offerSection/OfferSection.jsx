@@ -105,8 +105,10 @@ function OfferSection({ isMobile }) {
           <OfferInfo>
             <Typography variant="h3">Robotics</Typography>
             <Typography variant="bodySmall">
-              The Robotics team at GeekRoom Plaksha empowers members to design,
-              build, and program robots through hands-on projects and workshops.
+              The Robotics team empowers members to design, build, and program
+              robots through engaging projects and interactive workshops. With a
+              focus on innovation and collaboration, the team aims to promote
+              robotics at Plaksha by providing practical, hands-on experience.
             </Typography>
           </OfferInfo>
         </OfferCard>
