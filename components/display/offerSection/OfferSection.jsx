@@ -15,6 +15,7 @@ import BookSvg from "@icons/book1.svg";
 import CubeSvg from "@icons/i3dcubescan.svg";
 import MessageSvg from "@icons/messageprogramming.svg";
 import ContentSvg from "@icons/content.svg";
+import RobotSvg from "@icons/robot.svg";
 
 function OfferSection({ isMobile }) {
   const theme = useTheme();
@@ -22,6 +23,7 @@ function OfferSection({ isMobile }) {
   const Logo2ref = useRef();
   const Logo3ref = useRef();
   const Logo4ref = useRef();
+  const Logo5ref = useRef();
 
   return (
     <Container>
@@ -93,10 +95,27 @@ function OfferSection({ isMobile }) {
           }
         >
           <OfferLogo
-            bgcolor={["#4285F4", "#6FA1FF"]}
-            rgb="111, 168, 255"
+            bgcolor={["#FF5722", "#FF8A65"]}
+            rgb="255, 138, 101"
             delay={2000}
             ref={Logo4ref}
+          >
+            <RobotSvg />
+          </OfferLogo>
+          <OfferInfo>
+            <Typography variant="h3">Robotics</Typography>
+            <Typography variant="bodySmall">
+              The Robotics team at GeekRoom Plaksha empowers members to design,
+              build, and program robots through hands-on projects and workshops.
+            </Typography>
+          </OfferInfo>
+        </OfferCard>
+        <OfferCard>
+          <OfferLogo
+            bgcolor={["#4285F4", "#6FA1FF"]}
+            rgb="111, 168, 255"
+            delay={2500}
+            ref={Logo5ref}
           >
             <BookSvg />
           </OfferLogo>
@@ -135,6 +154,16 @@ function OfferSection({ isMobile }) {
         endAnchor={"middle"}
         start={Logo3ref}
         end={Logo4ref}
+        lineColor={theme?.colors.bgTertiary}
+        showHead={false}
+        curveness={0}
+        zIndex={-1}
+      />
+      <Xarrow
+        startAnchor={"middle"}
+        endAnchor={"middle"}
+        start={Logo4ref}
+        end={Logo5ref}
         lineColor={theme?.colors.bgTertiary}
         showHead={false}
         curveness={0}

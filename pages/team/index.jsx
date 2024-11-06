@@ -23,16 +23,6 @@ const teamData = {
       role: "Operations Lead"
     },
     {
-      id: 3,
-      profile: {
-        name: "Christopher George",
-        profileLink:
-          "https://www.linkedin.com/in/christopher-george-13077a216/",
-        image: "/images/team/Christopher.jpg"
-      },
-      role: "Tech Lead"
-    },
-    {
       id: 4,
       profile: {
         name: "Arunachalam Vijayanand",
@@ -40,7 +30,7 @@ const teamData = {
           "https://www.linkedin.com/in/arunachalam-vijayanand-42a263244/",
         image: "/images/team/arun.jpg"
       },
-      role: "'Emerging-Tech' Lead"
+      role: "Tech Lead"
     },
     {
       id: 5,
@@ -59,16 +49,16 @@ const teamData = {
           "https://www.linkedin.com/in/trinav-prasad-talukdar-44b34428b/",
         image: "/images/team/trinav.jpg"
       },
-      role: "Content Co-Lead"
+      role: "Content Lead"
     },
     {
-      id: 7,
+      id: 9,
       profile: {
-        name: "Suraj Dayma",
-        profileLink: "https://www.linkedin.com/in/surajdayma/",
-        image: "/images/team/Suraj.jpg"
+        name: "Nikunj Agarwal",
+        profileLink: "https://www.linkedin.com/in/nikunj-agarwal-2b388b288/",
+        image: "/images/team/nikunj.png"
       },
-      role: "Content Co-Lead"
+      role: "Robotics Lead"
     },
     {
       id: 8,
@@ -83,6 +73,25 @@ const teamData = {
   ],
 
   members: [
+    {
+      id: 3,
+      profile: {
+        name: "Christopher George",
+        profileLink:
+          "https://www.linkedin.com/in/christopher-george-13077a216/",
+        image: "/images/team/Christopher.jpg"
+      },
+      role: "Tech"
+    },
+    {
+      id: 7,
+      profile: {
+        name: "Suraj Dayma",
+        profileLink: "https://www.linkedin.com/in/surajdayma/",
+        image: "/images/team/Suraj.jpg"
+      },
+      role: "Content"
+    },
     {
       id: 9,
       profile: {
@@ -242,7 +251,8 @@ const teamData = {
       id: 26,
       profile: {
         name: "Dhruv Pande",
-        profileLink: "https://www.linkedin.com/in/dhruv-pande-9a730b256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        profileLink:
+          "https://www.linkedin.com/in/dhruv-pande-9a730b256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         image: "/images/team/dhruv.jpg"
       },
       role: "Marketing & Design"

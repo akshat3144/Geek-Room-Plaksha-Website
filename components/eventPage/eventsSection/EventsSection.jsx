@@ -15,7 +15,6 @@ import {
   TitleContainer
 } from "./EventsSection.styled";
 import Typography from "../../display/typography/Typography";
-import SpinnerLoader from "@/components/loaders/spinnerLoader/SpinnerLoader";
 import truncateText from "@/utils/truncate";
 import capitalize from "@/utils/capitalize";
 import isoToDate from "@/utils/isoToDate";

@@ -52,6 +52,7 @@ function EventPage({ eventData }) {
             <Avatar url={speaker.image} size="lg" borderWidth={"0"} />
             <SpeakerName>
               <Typography variant="h4">{speaker.name}</Typography>
+              <Typography variant="bodySmall">{speaker.title}</Typography>
             </SpeakerName>
           </SpeakerInfo>
         </SpeakerCard>
@@ -97,7 +98,7 @@ function EventPage({ eventData }) {
               {eventData.speakers != undefined &&
                 eventData.speakers.length > 0 && (
                   <SpeakersContainer>
-                    <Typography variant="h2">Instructors</Typography>
+                    <Typography variant="h2">Organizers</Typography>
                     <SpeakersCardContainer>
                       {speakerElements}
                     </SpeakersCardContainer>
@@ -141,6 +142,7 @@ function EventPage({ eventData }) {
                     {/* {capitalize(eventData.status)} */}
                     {eventData.status === "upcoming" && capitalize("Open")}
                     {eventData.status === "closed" && capitalize("closed")}
+                    {eventData.status === "ended" && capitalize("ended")}
                   </Typography>
                 </InfoModalRegistration>
                 {eventData.registrationLink && (

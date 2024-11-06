@@ -185,7 +185,7 @@ function BlogsPage() {
                     >
                       <ImageContainer variants={coverImageMotion}>
                         <Image
-                          src={blog.thumbnail ?? "/images/gdsc_fallback.png"}
+                          src={blog.thumbnail}
                           alt={blog.title}
                           fill="responsive"
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 80vw"
@@ -227,7 +227,7 @@ function BlogsPage() {
                     >
                       <ImageContainer variants={coverImageMotion}>
                         <Image
-                          src={blog.thumbnail ?? "/images/gdsc_fallback.png"}
+                          src={blog.thumbnail}
                           alt={blog.title}
                           fill="responsive"
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 80vw"

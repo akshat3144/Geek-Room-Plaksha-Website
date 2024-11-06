@@ -20,7 +20,39 @@ const staticEventsData = [
         id: 1,
         name: "Raghav Sarna",
         profileLink: "https://www.linkedin.com/in/raghav-sarna-4789bb2b3/",
-        image: "/images/team/raghav.jpg"
+        image: "/images/team/raghav.jpg",
+        title: "Instructor"
+      },
+      {
+        id: 2,
+        name: "Christopher George",
+        profileLink:
+          "https://www.linkedin.com/in/christopher-george-13077a216/",
+        image: "/images/team/Christopher.jpg",
+        title: "Teaching Assistant"
+      },
+      {
+        id: 3,
+        name: "Mudasir Rasheed",
+        profileLink:
+          "https://x.com/MudasirRasheed_?t=CzMYPmtNaLTXNxs2WLJ3Bg&s=09/",
+        image: "/images/team/Mudasir.jpg",
+        title: "Teaching Assistant"
+      },
+      {
+        id: 4,
+        name: "Trinav Talukdar",
+        profileLink:
+          "https://www.linkedin.com/in/trinav-prasad-talukdar-44b34428b/",
+        image: "/images/team/trinav.jpg",
+        title: "Teaching Assistant"
+      },
+      {
+        id: 5,
+        name: "Shreya Khanna",
+        profileLink: "https://www.linkedin.com/in/shreya-khanna-a58a36323/",
+        image: "/images/team/shreya.png",
+        title: "Teaching Assistant"
       }
     ]
   },
@@ -36,7 +68,7 @@ const staticEventsData = [
     startDate: "2024-10-23T18:00:00",
     endDate: "2024-10-23T20:00:00",
     venue: "Room. 1101",
-    status: "closed",
+    status: "ended",
     // registrationLink: "https://example.com/register/event-1",
     resourcesLink:
       "https://plakshauniversity1-my.sharepoint.com/:b:/g/personal/akshat_gupta_ug23_plaksha_edu_in/EY_31yK1rJVPj7HkWtv7s4oBncZTYDGaI0R_JeD4qpoSFA?e=dm1p8i",
@@ -45,27 +77,47 @@ const staticEventsData = [
         id: 1,
         name: "Niksh Hiremath",
         profileLink: "https://www.linkedin.com/in/nikshhiremath",
-        image: "/images/team/niksh.png"
+        image: "/images/team/niksh.png",
+        title: "Instructor"
       },
       {
         id: 2,
-        name: "Akshat Gupta",
-        profileLink: "https://www.linkedin.com/in/akshat-gupta-840740285/",
-        image: "/images/team/Akshat.png"
-      },
-      {
-        id: 3,
-        name: "Christopher George",
-        profileLink:
-          "https://www.linkedin.com/in/christopher-george-13077a216/",
-        image: "/images/team/Christopher.jpg"
-      },
-      {
-        id: 4,
         name: "Armaan Raisinghani",
         profileLink:
           "https://www.linkedin.com/in/armaan-raisinghani-362654240/",
-        image: "/images/team/armaan.png"
+        image: "/images/team/armaan.png",
+        title: "Instructor"
+      },
+      {
+        id: 3,
+        name: "Akshat Gupta",
+        profileLink: "https://www.linkedin.com/in/akshat-gupta-840740285/",
+        image: "/images/team/Akshat.png",
+        title: "Instructor"
+      },
+      {
+        id: 4,
+        name: "Christopher George",
+        profileLink:
+          "https://www.linkedin.com/in/christopher-george-13077a216/",
+        image: "/images/team/Christopher.jpg",
+        title: "Instructor"
+      },
+      {
+        id: 5,
+        name: "Mudasir Rasheed",
+        profileLink:
+          "https://x.com/MudasirRasheed_?t=CzMYPmtNaLTXNxs2WLJ3Bg&s=09/",
+        image: "/images/team/Mudasir.jpg",
+        title: "Teaching Assistant"
+      },
+      {
+        id: 6,
+        name: "Arunachalam Vijayanand",
+        profileLink:
+          "https://www.linkedin.com/in/armaan-raisinghani-362654240/",
+        image: "/images/team/arun.jpg",
+        title: "Teaching Assistant"
       }
     ]
   }

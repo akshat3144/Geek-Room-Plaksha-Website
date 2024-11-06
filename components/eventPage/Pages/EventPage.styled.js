@@ -231,7 +231,7 @@ export const InfoModal = styled.div`
   background-color: rgba(255, 255, 255, 0.3);
   border-left: 4px solid
     ${({ theme, status }) =>
-      status === "ended"
+      status === "ended" || status === "closed"
         ? theme.colors.brandRed
         : status === "upcoming" || status === "open"
         ? theme.colors.brandGreen
