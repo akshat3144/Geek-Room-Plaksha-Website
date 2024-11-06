@@ -36,7 +36,7 @@ const staticEventsData = [
         name: "Mudasir Rasheed",
         profileLink:
           "https://x.com/MudasirRasheed_?t=CzMYPmtNaLTXNxs2WLJ3Bg&s=09/",
-        image: "/images/team/Mudasir.jpg",
+        image: "/images/team/mudasir.jpg",
         title: "Teaching Assistant"
       },
       {
@@ -108,7 +108,7 @@ const staticEventsData = [
         name: "Mudasir Rasheed",
         profileLink:
           "https://x.com/MudasirRasheed_?t=CzMYPmtNaLTXNxs2WLJ3Bg&s=09/",
-        image: "/images/team/Mudasir.jpg",
+        image: "/images/team/mudasir.jpg",
         title: "Teaching Assistant"
       },
       {
