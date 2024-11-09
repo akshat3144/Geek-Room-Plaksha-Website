@@ -256,6 +256,25 @@ const teamData = {
         image: "/images/team/dhruv.jpg"
       },
       role: "Marketing & Design"
+    },
+    {
+      id: 27,
+      profile: {
+        name: "Ronak Tiwari",
+        profileLink: "https://www.linkedin.com/in/ronak-tiwari-67b522255/",
+        image: "/images/team/ronak.png"
+      },
+      role: "Robotics"
+    },
+    {
+      id: 26,
+      profile: {
+        name: "Divy Gupta",
+        profileLink:
+          "https://www.instagram.com/_divy_gupta_44?igsh=Nm5xN2s2bW9zbjg2&utm_source=qr",
+        image: "/images/team/divy.png"
+      },
+      role: "Robotics"
     }
   ]
 };
