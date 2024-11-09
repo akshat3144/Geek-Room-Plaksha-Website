@@ -54,7 +54,7 @@ export const HeroTextSpan = styled.span`
     color: ${({ color }) => (color ? color : "#FFF06C")};
   }
   @media (max-width: 768px) {
-    font-size: 60px;
+    font-size: 58px;
   }
 `;
 

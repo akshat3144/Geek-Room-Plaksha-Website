@@ -13,20 +13,40 @@ import Layout from "@/components/layout";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/display/footer/Footer";
 
+// const myFont = localFont({
+//   src: [
+//     {
+//       path: "../public/fonts/GoogleSans-Regular.ttf",
+//       weight: "400",
+//       style: "normal"
+//     },
+//     {
+//       path: "../public/fonts/GoogleSans-Medium.ttf",
+//       weight: "500",
+//       style: "normal"
+//     },
+//     {
+//       path: "../public/fonts/GoogleSans-Bold.ttf",
+//       weight: "700",
+//       style: "normal"
+//     }
+//   ]
+// });
+
 const myFont = localFont({
   src: [
     {
-      path: "../public/fonts/GoogleSans-Regular.ttf",
+      path: "../public/fonts/Montserrat-Regular.ttf",
       weight: "400",
       style: "normal"
     },
     {
-      path: "../public/fonts/GoogleSans-Medium.ttf",
+      path: "../public/fonts/Montserrat-Medium.ttf",
       weight: "500",
       style: "normal"
     },
     {
-      path: "../public/fonts/GoogleSans-Bold.ttf",
+      path: "../public/fonts/Montserrat-Bold.ttf",
       weight: "700",
       style: "normal"
     }

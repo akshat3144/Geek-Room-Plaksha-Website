@@ -27,9 +27,11 @@ function OfferSection({ isMobile }) {
 
   return (
     <Container>
-      <Title>
-        <Typography variant="h1">Our Dynamic Team Structure</Typography>
-      </Title>
+      <div style={isMobile ? { paddingLeft: "20px" } : {}}>
+        <Title>
+          <Typography variant="h1">Our Dynamic Team Structure</Typography>
+        </Title>
+      </div>
       <OffersContainer>
         <OfferCard>
           <OfferLogo
