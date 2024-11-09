@@ -1,5 +1,32 @@
 const staticEventsData = [
   {
+    slug: "Code-Clash",
+    title: "Code Clash",
+    shortDescription:
+      "An exciting coding event hosted by Geek Room Plaksha in collaboration with GeeksforGeeks. Compete, solve challenges, and win cash prizes!",
+    thumbnail: "/images/events/code-clash/poster.jpg",
+    coverPhoto: "/images/events/code-clash/cover1.png",
+    description:
+      "<p>An exciting coding challenge hosted by Geek Room Plaksha in collaboration with GeeksforGeeks! Participants will test their coding skills by solving real-world problems and competing with peers for cash prizes, exclusive goodies, and participation certificates.</p><p><strong>Highlights:</strong></p><ul><li>💻 Solve real-world problems and compete with peers.</li><li>🏆 Cash prizes worth ₹3,000.</li><li>🎁 Exclusive Goodies for everyone.</li><li>🏅 Participation Certificate for all attendees.</li><li>🛍️ Instantly get a 20% discount Coupon on GeeksforGeeks when you register.</li></ul>",
+    startDate: "2024-11-19T18:00:00",
+    endDate: "2024-11-19T20:00:00",
+    venue: "Room 1001",
+    status: "upcoming",
+    registrationLink:
+      "https://practice.geeksforgeeks.org/contest/code-clash-plaksha-university"
+    // resourcesLink:
+    // "https://plakshauniversity1-my.sharepoint.com/...your_shared_resource_link...",
+    // speakers: [
+    //   {
+    //     id: 1,
+    //     name: "Akshat Gupta",
+    //     profileLink: "https://www.linkedin.com/in/akshat-gupta-840740285/",
+    //     image: "/images/team/Akshat.png"
+    //     // title: "Instructor"
+    //   }
+    // ]
+  },
+  {
     slug: "TensorFlow",
     title: "TensorFlow Workshop",
     shortDescription:
