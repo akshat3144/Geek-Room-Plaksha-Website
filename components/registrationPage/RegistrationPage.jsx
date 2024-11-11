@@ -40,65 +40,10 @@ const RegistrationPage = () => {
           Apply now and embark on a journey of growth and opportunities!`}
         </Typography>
       </TitleContainer>
-
-      {/* <BannerImageContainer>
-        <Image
-          src="/images/group-photo.png"
-          alt={"Team"}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 80vw"
-          fill="responsive"
-          style={{
-            borderRadius: "inherit",
-            objectFit: "cover"
-          }}
-        />
-      </BannerImageContainer> */}
-
-      {/* <ProceduresContainer>
-        <Typography variant="h2">Application Process</Typography>
-
-        <Xwrapper>
-          <ProcessCard className="card-1" ref={ref1}>
-            <ApplicationIcon className="icon" />
-            <Typography className="bodyEmphasized">Fill the form</Typography>
-          </ProcessCard>
-          <ProcessCard className="card-2" ref={ref2}>
-            <ClipboardIcon className="icon" />
-            <Typography className="bodyEmphasized">
-              Complete the tasks
-            </Typography>
-          </ProcessCard>
-          <ProcessCard className="card-3" ref={ref3}>
-            <UserIcon className="icon" />
-            <Typography className="bodyEmphasized">
-              Take the interview
-            </Typography>
-          </ProcessCard>
-
-          <Xarrow
-            start={ref1}
-            end={ref2}
-            headShape={"circle"}
-            headSize={3}
-            startAnchor={"middle"}
-          />
-          <Xarrow
-            start={ref2}
-            end={ref3}
-            headShape={"circle"}
-            headSize={3}
-            startAnchor={"middle"}
-          />
-        </Xwrapper>
-      </ProceduresContainer> */}
       <ApplyNowContainer>
         <Typography variant="h3" style={{ textAlign: "center" }}>
           What are you waiting for?
         </Typography>
-        {/*<Typography variant="body" className="applyDescription">
-          {`If you're excited to learn, collaborate, and push boundaries, don't wait.
-          Apply now and embark on a journey of growth and possibilities!`}
-        </Typography> */}
         <ActionsContainer>
           <Link
             href={applicationData.link ? applicationData.link : "#"}
