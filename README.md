@@ -1,6 +1,6 @@
 # Geek Room Plaksha Official Website
 
-Welcome to the official website of Geek Room Plaksha Chapter! This site is a collaborative project developed by **Akshat** and **Arun** to create a dynamic and interactive platform for our coding community.
+Welcome to the official website of Geek Room Plaksha Chapter! This site is a collaborative project developed by **[Akshat Gupta](https://www.linkedin.com/in/akshat-gupta-840740285/)** and **[Arunachalam Vijayanand](https://www.linkedin.com/in/arunachalam-vijayanand-42a263244/)** to create a dynamic and interactive platform for our coding community.
 
 ## Tech Stack
 
@@ -33,13 +33,11 @@ To run this project locally:
    ```bash
    git clone https://github.com/yourusername/geek-room-plaksha.git
    ```
-
 2. **Install dependencies**:
 
    ```bash
    npm install
    ```
-
 3. **Start the development server**:
 
    ```bash
