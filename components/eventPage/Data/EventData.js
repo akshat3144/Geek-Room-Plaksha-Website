@@ -39,8 +39,8 @@ const staticEventsData = [
     endDate: "2024-11-14T20:00:00",
     venue: "Room 1001, Plaksha University",
     status: "upcoming",
-    resourcesLink:
-      "https://plakshauniversity1-my.sharepoint.com/:b:/g/personal/akshat_gupta_ug23_plaksha_edu_in/resource-link",
+    // resourcesLink:
+    // "https://plakshauniversity1-my.sharepoint.com/:b:/g/personal/akshat_gupta_ug23_plaksha_edu_in/resource-link",
     speakers: [
       {
         id: 1,
