@@ -27,6 +27,60 @@ const staticEventsData = [
     // ]
   },
   {
+    slug: "Gear-Up",
+    title: "Gear Up",
+    shortDescription:
+      "Dive into the future of robotics with hands-on experiences, exciting exhibits, and a thrilling competition. Join us to innovate, create, and dominate!",
+    thumbnail: "/images/events/gear-up/poster1.png",
+    coverPhoto: "/images/events/gear-up/cover1.png",
+    description:
+      "<p>Welcome to the <strong>Gear Up</strong> event! This experience invites you to dive into the world of robotics and unleash your creativity. Attendees will enjoy an exciting robotics exhibition featuring robotic arms, drones, and underwater robots, along with a hands-on competition where teams can build and race their own robots. With exciting prizes up for grabs, this event promises innovation, teamwork, and fun. Don’t miss the opportunity to explore the future of robotics with like-minded enthusiasts!</p>",
+    startDate: "2024-11-14T17:00:00",
+    endDate: "2024-11-14T20:00:00",
+    venue: "Room 1001, Plaksha University",
+    status: "upcoming",
+    resourcesLink:
+      "https://plakshauniversity1-my.sharepoint.com/:b:/g/personal/akshat_gupta_ug23_plaksha_edu_in/resource-link",
+    speakers: [
+      {
+        id: 1,
+        name: "Nikunj Agarwal",
+        profileLink: "https://www.linkedin.com/in/nikunj-agarwal-2b388b288/",
+        image: "/images/team/nikunj.png"
+        // title: ""
+      },
+      {
+        id: 2,
+        name: "Divy Gupta",
+        profileLink:
+          "https://www.instagram.com/_divy_gupta_44?igsh=Nm5xN2s2bW9zbjg2&utm_source=qr",
+        image: "/images/team/divy.png"
+        // title: ""
+      },
+      {
+        id: 3,
+        name: "Soumya Pandey",
+        profileLink: "https://www.linkedin.com/in/soumya-pandey-89825323b/",
+        image: "/images/team/soumya.jpg"
+        // title: ""
+      },
+      {
+        id: 4,
+        name: "Arsh Arora",
+        profileLink: "https://www.linkedin.com/in/arsh-arora-6aa00232a/",
+        image: "/images/team/arsh.png"
+        // title: ""
+      },
+      {
+        id: 5,
+        name: "Avantika Bansal",
+        profileLink: "https://www.linkedin.com/in/avantika-bansal-9253b3278",
+        image: "/images/team/avantika.png"
+        // title: ""
+      }
+    ]
+  },
+  {
     slug: "TensorFlow",
     title: "TensorFlow Workshop",
     shortDescription:
@@ -38,10 +92,10 @@ const staticEventsData = [
     startDate: "2024-11-11T18:00:00",
     endDate: "2024-11-11T20:00:00",
     venue: "Room. 1002",
-    status: "upcoming",
-    registrationLink: "https://forms.office.com/r/8bAds1QKTb",
-    // resourcesLink:
-    // "https://plakshauniversity1-my.sharepoint.com/:b:/g/personal/akshat_gupta_ug23_plaksha_edu_in/EY_31yK1rJVPj7HkWtv7s4oBncZTYDGaI0R_JeD4qpoSFA?e=dm1p8i",
+    status: "ended",
+    // registrationLink: "https://forms.office.com/r/8bAds1QKTb",
+    resourcesLink:
+      "https://colab.research.google.com/drive/1lBfHLfSuEI3bNb0o4hg1HRGM3Ca-Hy5X?usp=sharing",
     speakers: [
       {
         id: 1,

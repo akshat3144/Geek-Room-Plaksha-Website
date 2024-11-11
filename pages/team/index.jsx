@@ -171,7 +171,7 @@ const teamData = {
         profileLink: "https://www.linkedin.com/in/arsh-arora-6aa00232a/",
         image: "/images/team/arsh.png"
       },
-      role: "Marketing & Design"
+      role: "Robotics"
     },
     {
       id: 18,
