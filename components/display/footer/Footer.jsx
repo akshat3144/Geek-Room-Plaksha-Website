@@ -169,7 +169,7 @@ function Footer({ toggleTheme, isDarkMode }) {
             <FaMoon className="icon moon" />
           </ThemeToggleSwitch>
         </div>
-        <Authors>
+        {/* <Authors>
           <Typography
             variant="bodySmall"
             subdued
@@ -204,7 +204,7 @@ function Footer({ toggleTheme, isDarkMode }) {
               />
             </Link>
           </AvatarStack>{" "}
-        </Authors>
+        </Authors> */}
       </FooterMeta>
     </FooterContainer>
   );
