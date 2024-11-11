@@ -157,7 +157,7 @@ function Footer({ toggleTheme, isDarkMode }) {
             subdued
             style={{ whiteSpace: "normal", width: "90%" }}
           >
-            Made by{" "}
+            Made with ❤️ by{" "}
             <a
               href="https://www.linkedin.com/in/akshat-gupta-840740285/"
               style={{ color: "#f15b22", textDecoration: "none" }}
