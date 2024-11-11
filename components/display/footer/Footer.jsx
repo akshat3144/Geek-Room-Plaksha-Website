@@ -138,7 +138,7 @@ function Footer({ toggleTheme, isDarkMode }) {
         </FooterSocialIcons>
       </FooterSocials>
       <FooterMeta>
-        <div
+        {/* <div
           style={{
             // paddingRight: "2.75rem",
             paddingBottom: "0.8rem",
@@ -150,6 +150,14 @@ function Footer({ toggleTheme, isDarkMode }) {
             <FaSun className="icon sun" />
             <FaMoon className="icon moon" />
           </ThemeToggleSwitch>
+        </div> */}
+        <div
+          style={{
+            paddingBottom: "0.8rem",
+            paddingRight: isMobile ? 0 : "initial"
+          }}
+        >
+          Built with contributions<br></br>from open-source resources.
         </div>
         <Authors>
           <Typography
@@ -157,7 +165,7 @@ function Footer({ toggleTheme, isDarkMode }) {
             subdued
             style={{ whiteSpace: "normal", width: "90%" }}
           >
-            Made with ❤️ by{" "}
+            Made with ❤️ <br></br>by{" "}
             <a
               href="https://www.linkedin.com/in/akshat-gupta-840740285/"
               style={{ color: "#f15b22", textDecoration: "none" }}
