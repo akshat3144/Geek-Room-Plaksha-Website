@@ -106,14 +106,6 @@ const staticEventsData = [
         title: "Instructor"
       },
       {
-        id: 2,
-        name: "Christopher George",
-        profileLink:
-          "https://www.linkedin.com/in/christopher-george-13077a216/",
-        image: "/images/team/Christopher.jpg",
-        title: "Teaching Assistant"
-      },
-      {
         id: 3,
         name: "Mudasir Rasheed",
         profileLink:
