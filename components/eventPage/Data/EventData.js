@@ -35,9 +35,9 @@ const staticEventsData = [
     coverPhoto: "/images/events/gear-up/cover1.png",
     description:
       "<p>Welcome to the <strong>Gear Up</strong> event! This experience invites you to dive into the world of robotics and unleash your creativity. Attendees will enjoy an exciting robotics exhibition featuring robotic arms, drones, and underwater robots, along with a hands-on competition where teams can build and race their own robots. With exciting prizes up for grabs, this event promises innovation, teamwork, and fun. Don’t miss the opportunity to explore the future of robotics with like-minded enthusiasts!</p>",
-    startDate: "2024-11-14T17:00:00",
+    startDate: "2024-11-14T17:30:00",
     endDate: "2024-11-14T20:00:00",
-    venue: "Room 1001, Plaksha University",
+    venue: "Room 1001",
     status: "upcoming",
     registrationLink: "https://forms.office.com/r/m4vCPMifmn?origin=lprLink",
     // resourcesLink:
