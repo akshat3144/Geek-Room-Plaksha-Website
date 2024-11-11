@@ -179,18 +179,6 @@ function Footer({ toggleTheme, isDarkMode }) {
           </Typography>
           <AvatarStack>
             <Link
-              href="https://www.linkedin.com/in/arunachalam-vijayanand-42a263244/"
-              target="_blank"
-            >
-              <Avatar
-                size={isMobile ? "xs" : "sm"}
-                borderColor={lightTheme.colors.brandBlue}
-                url={"/images/team/arun.jpg"}
-                className=" second hover-effect"
-                borderWidth={"2px"}
-              />
-            </Link>
-            <Link
               href="https://www.linkedin.com/in/akshat-gupta-840740285/"
               target="_blank"
             >
@@ -199,6 +187,18 @@ function Footer({ toggleTheme, isDarkMode }) {
                 borderColor={lightTheme.colors.brandRed}
                 url={"/images/team/Akshat.png"}
                 className="third hover-effect"
+                borderWidth={"2px"}
+              />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/arunachalam-vijayanand-42a263244/"
+              target="_blank"
+            >
+              <Avatar
+                size={isMobile ? "xs" : "sm"}
+                borderColor={lightTheme.colors.brandBlue}
+                url={"/images/team/arun.jpg"}
+                className=" second hover-effect"
                 borderWidth={"2px"}
               />
             </Link>
