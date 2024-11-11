@@ -170,13 +170,6 @@ function Footer({ toggleTheme, isDarkMode }) {
           </ThemeToggleSwitch>
         </div>
         <Authors>
-          {/* <Typography
-            variant="bodySmall"
-            subdued
-            style={{ whiteSpace: "normal", width: "90%", paddingRight: "1em" }}
-          >
-            Made by
-          </Typography> */}
           <AvatarStack>
             <Link
               href="https://github.com/Geek-Room-Plaksha/Geek-Room-Plaksha-Website"
@@ -185,24 +178,12 @@ function Footer({ toggleTheme, isDarkMode }) {
             >
               <Avatar
                 size={isMobile ? "xs" : "sm"}
-                borderColor={lightTheme.colors.brandRed}
+                // borderColor={lightTheme.colors.brandRed}
                 url={"/images/image.png"}
                 className="third hover-effect"
                 borderWidth={"2px"}
               />
             </Link>
-            {/* <Link
-              href="https://www.linkedin.com/in/arunachalam-vijayanand-42a263244/"
-              target="_blank"
-            >
-              <Avatar
-                size={isMobile ? "xs" : "sm"}
-                borderColor={lightTheme.colors.brandBlue}
-                url={"/images/team/arun.jpg"}
-                className=" second hover-effect"
-                borderWidth={"2px"}
-              />
-            </Link> */}
           </AvatarStack>{" "}
         </Authors>
       </FooterMeta>
