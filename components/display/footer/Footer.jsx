@@ -178,10 +178,10 @@ function Footer({ toggleTheme, isDarkMode }) {
               target="_blank"
             >
               <Avatar
-                size={isMobile ? "xs" : "sm"}
+                size={isMobile ? "sm" : "sm"}
                 // borderColor={lightTheme.colors.brandRed}
                 url={"/images/image.png"}
-                className="third hover-effect"
+                className="hover-effect"
                 borderWidth={"2px"}
               />
             </Link>
