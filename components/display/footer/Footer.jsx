@@ -82,7 +82,7 @@ function Footer({ toggleTheme, isDarkMode }) {
         </Typography>
         <FooterSocialIcons>
           <Link
-            href="https://www.linkedin.com/company/geekroom-plaksha/"
+            href="https://www.linkedin.com/company/geekroom-plaksha"
             target="_blank"
             style={{ color: "gray" }}
           >
