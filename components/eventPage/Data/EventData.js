@@ -96,7 +96,7 @@ const staticEventsData = [
     status: "ended",
     // registrationLink: "https://forms.office.com/r/8bAds1QKTb",
     resourcesLink:
-      "https://colab.research.google.com/drive/1lBfHLfSuEI3bNb0o4hg1HRGM3Ca-Hy5X?usp=sharing",
+      "https://plakshauniversity1-my.sharepoint.com/:f:/g/personal/raghav_sarna_ug23_plaksha_edu_in/EkCH_YcBYqdKv-MM3V5qAhAB0mvrMRIpD1DEYWXwsHuEyQ?e=jIZsjn",
     speakers: [
       {
         id: 1,

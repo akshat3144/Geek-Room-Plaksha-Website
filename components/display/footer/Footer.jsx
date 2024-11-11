@@ -173,7 +173,7 @@ function Footer({ toggleTheme, isDarkMode }) {
           <Typography
             variant="bodySmall"
             subdued
-            style={{ whiteSpace: "normal", width: "90%" }}
+            style={{ whiteSpace: "normal", width: "90%", paddingRight: "1em" }}
           >
             Made by
           </Typography>
@@ -181,6 +181,7 @@ function Footer({ toggleTheme, isDarkMode }) {
             <Link
               href="https://www.linkedin.com/in/akshat-gupta-840740285/"
               target="_blank"
+              style={{ paddingRight: "0.25em" }}
             >
               <Avatar
                 size={isMobile ? "xs" : "sm"}
