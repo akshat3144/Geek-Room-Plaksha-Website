@@ -117,24 +117,6 @@ function Footer({ toggleTheme, isDarkMode }) {
               }}
             />
           </Link>
-          {/* <Link
-            href="https://github.com/Geek-Room-Plaksha/"
-            target="_blank"
-            style={{ color: "gray" }}
-          >
-            <GitHubIcon
-              style={{ marginBottom: "-5px" }}
-              sx={{
-                fontSize: 25,
-                transition: "all 0.2s ease-in-out",
-
-                "&:hover": {
-                  transform: "translate(0, -1px)",
-                  color: "#E1306C"
-                }
-              }}
-            />
-          </Link> */}
           <Link
             href="https://chat.whatsapp.com/KLsOEWvVMGEBbcxNqxIInD"
             target="_blank"
@@ -170,11 +152,30 @@ function Footer({ toggleTheme, isDarkMode }) {
           </ThemeToggleSwitch>
         </div>
         <Authors>
+          <Typography
+            variant="bodySmall"
+            subdued
+            style={{ whiteSpace: "normal", width: "90%" }}
+          >
+            Made by{" "}
+            <a
+              href="https://www.linkedin.com/in/akshat-gupta-840740285/"
+              style={{ color: "#f15b22", textDecoration: "none" }}
+            >
+              Akshat
+            </a>{" "}
+            &{" "}
+            <a
+              href="https://www.linkedin.com/in/arunachalam-vijayanand-42a263244/"
+              style={{ color: "#f15b22", textDecoration: "none" }}
+            >
+              Arun
+            </a>
+          </Typography>
           <AvatarStack>
             <Link
               href="https://github.com/Geek-Room-Plaksha/Geek-Room-Plaksha-Website"
               target="_blank"
-              style={{ paddingRight: "0.25em" }}
             >
               <Avatar
                 size={isMobile ? "xs" : "sm"}
