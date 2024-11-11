@@ -1,28 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Geek Room Plaksha Official Website
+
+Welcome to the official website of Geek Room Plaksha Chapter! This site is a collaborative project developed by **Akshat** and **Arun** to create a dynamic and interactive platform for our coding community.
+
+## Tech Stack
+
+The website is built with **Next.js 15**, leveraging various component libraries to enhance its design, usability, and functionality. Here’s a rundown of the tools and libraries we've used:
+
+- **shadcn**: For accessible and well-styled component design.
+- **magicui**: Bringing creative and modern UI elements to the site.
+- **acerternity**: A lightweight component library for responsive layouts.
+- **chakra-ui**: Used for building beautiful, reusable, and customizable UI components.
+- **Open Source Components**: We've incorporated various components from open-source projects available on GitHub to enrich the site's functionality.
+
+## Contributing
+
+We’re excited to have contributions from the community! Feel free to explore, suggest improvements, and add new features. Contributions can be made via pull requests or by opening issues with suggestions and feedback.
+
+### How to Contribute
+
+1. **Fork the Repository** - Clone it to your local machine.
+2. **Install Dependencies** - Run `npm install` to install all required packages.
+3. **Run the Development Server** - Use `npm run dev` to start a local development server.
+4. **Make Changes** - Add features or fix issues in the repository.
+5. **Submit a Pull Request** - Once your changes are complete, submit a pull request for review.
 
 ## Getting Started
 
-First, run the development server:
+To run this project locally:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. **Clone the repository**:
 
-## Learn More
+   ```bash
+   git clone https://github.com/yourusername/geek-room-plaksha.git
+   ```
 
-To learn more about dependencies, take a look at the following resources:
+2. **Install dependencies**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- https://v2.tailwindcss.com/docs
-- https://www.figma.com/team_invite/redeem/sO8YwpOTwrA8nnOCMlMsaM
-- [`next/font`](https://nextjs.org/docs/basic-features/font-optimization)
-- https://www.typescriptlang.org/docs/
-- https://ui.shadcn.com/
-- https://nextui.org/docs/guide/introduction
-- https://pnpm.io/installation (pnpm installation)
-- https://docs.npmjs.com/downloading-and-installing-node-js-and-npm (npm installation)
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+
+   ```bash
+   npm run dev
+   ```
+
+Your local server should now be running at `http://localhost:3000`, where you can view and test your changes.
+
+## Feedback
+
+We value your feedback! If you have suggestions, ideas, or issues to report, feel free to open an issue in the repository.
+
+---
+
+Let’s build something amazing together!
