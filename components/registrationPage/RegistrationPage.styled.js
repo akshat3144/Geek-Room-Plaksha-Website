@@ -118,8 +118,9 @@ export const ApplyButton = styled.button`
   padding: 15px 20px;
   border-radius: 8px;
   border: none;
-  background-color: ${({ theme }) => theme.colors.brandBlue};
-  color: ${({ theme }) => theme.colors.bgPrimary};
+  background-color: ${({ theme }) => theme.colors.brandRed};
+  color: white;
+
   font-size: 1.2rem;
   font-weight: 600;
   transition: all 0.2s ease-in-out;

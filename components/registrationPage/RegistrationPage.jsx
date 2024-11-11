@@ -36,8 +36,8 @@ const RegistrationPage = () => {
         <Typography variant="displayLarge">Join our amazing Team</Typography>
 
         <Typography variant="body" className="descriptionText">
-          {`Passionate about tech, innovation, and community? Be
-          part of an energetic team.`}
+          {`If you're excited to learn and collaborate, don't wait.
+          Apply now and embark on a journey of growth and opportunities!`}
         </Typography>
       </TitleContainer>
 
@@ -54,7 +54,7 @@ const RegistrationPage = () => {
         />
       </BannerImageContainer> */}
 
-      <ProceduresContainer>
+      {/* <ProceduresContainer>
         <Typography variant="h2">Application Process</Typography>
 
         <Xwrapper>
@@ -90,15 +90,15 @@ const RegistrationPage = () => {
             startAnchor={"middle"}
           />
         </Xwrapper>
-      </ProceduresContainer>
+      </ProceduresContainer> */}
       <ApplyNowContainer>
-        <Typography variant="h2" style={{ textAlign: "center" }}>
+        {/* <Typography variant="h2" style={{ textAlign: "center" }}>
           What are you waiting for?
         </Typography>
         <Typography variant="body" className="applyDescription">
           {`If you're excited to learn, collaborate, and push boundaries, don't wait.
           Apply now and embark on a journey of growth and possibilities!`}
-        </Typography>
+        </Typography> */}
         <ActionsContainer>
           <Link
             href={applicationData.link ? applicationData.link : "#"}
