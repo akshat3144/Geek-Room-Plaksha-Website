@@ -117,7 +117,7 @@ function Footer({ toggleTheme, isDarkMode }) {
               }}
             />
           </Link>
-          <Link
+          {/* <Link
             href="https://github.com/Geek-Room-Plaksha/"
             target="_blank"
             style={{ color: "gray" }}
@@ -134,7 +134,7 @@ function Footer({ toggleTheme, isDarkMode }) {
                 }
               }}
             />
-          </Link>
+          </Link> */}
           <Link
             href="https://chat.whatsapp.com/KLsOEWvVMGEBbcxNqxIInD"
             target="_blank"
@@ -169,29 +169,29 @@ function Footer({ toggleTheme, isDarkMode }) {
             <FaMoon className="icon moon" />
           </ThemeToggleSwitch>
         </div>
-        {/* <Authors>
-          <Typography
+        <Authors>
+          {/* <Typography
             variant="bodySmall"
             subdued
             style={{ whiteSpace: "normal", width: "90%", paddingRight: "1em" }}
           >
             Made by
-          </Typography>
+          </Typography> */}
           <AvatarStack>
             <Link
-              href="https://www.linkedin.com/in/akshat-gupta-840740285/"
+              href="https://github.com/Geek-Room-Plaksha/Geek-Room-Plaksha-Website"
               target="_blank"
               style={{ paddingRight: "0.25em" }}
             >
               <Avatar
                 size={isMobile ? "xs" : "sm"}
                 borderColor={lightTheme.colors.brandRed}
-                url={"/images/team/Akshat.png"}
+                url={"/images/image.png"}
                 className="third hover-effect"
                 borderWidth={"2px"}
               />
             </Link>
-            <Link
+            {/* <Link
               href="https://www.linkedin.com/in/arunachalam-vijayanand-42a263244/"
               target="_blank"
             >
@@ -202,9 +202,9 @@ function Footer({ toggleTheme, isDarkMode }) {
                 className=" second hover-effect"
                 borderWidth={"2px"}
               />
-            </Link>
+            </Link> */}
           </AvatarStack>{" "}
-        </Authors> */}
+        </Authors>
       </FooterMeta>
     </FooterContainer>
   );
