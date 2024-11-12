@@ -33,11 +33,13 @@ To run this project locally:
    ```bash
    git clone https://github.com/yourusername/geek-room-plaksha.git
    ```
+
 2. **Install dependencies**:
 
    ```bash
    npm install
    ```
+
 3. **Start the development server**:
 
    ```bash
