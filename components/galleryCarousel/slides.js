@@ -16,6 +16,20 @@ const slides = [
     )
   },
   {
+    key: "slide-8",
+    content: (
+      <GallerySlide
+        galleryImageData={{
+          event: {
+            title: "Gear Up",
+            id: "1"
+          },
+          url: "/images/slides/8.png"
+        }}
+      />
+    )
+  },
+  {
     key: "slide-2",
     content: (
       <GallerySlide
@@ -25,34 +39,6 @@ const slides = [
             id: "1"
           },
           url: "/images/slides/2.jpg"
-        }}
-      />
-    )
-  },
-  {
-    key: "slide-3",
-    content: (
-      <GallerySlide
-        galleryImageData={{
-          event: {
-            title: "Git-Github Workshop",
-            id: "1"
-          },
-          url: "/images/slides/3.jpg"
-        }}
-      />
-    )
-  },
-  {
-    key: "slide-4",
-    content: (
-      <GallerySlide
-        galleryImageData={{
-          event: {
-            title: "Git-Github Workshop",
-            id: "1"
-          },
-          url: "/images/slides/4.jpg"
         }}
       />
     )
@@ -72,6 +58,20 @@ const slides = [
     )
   },
   {
+    key: "slide-3",
+    content: (
+      <GallerySlide
+        galleryImageData={{
+          event: {
+            title: "Git-Github Workshop",
+            id: "1"
+          },
+          url: "/images/slides/3.jpg"
+        }}
+      />
+    )
+  },
+  {
     key: "slide-6",
     content: (
       <GallerySlide
@@ -86,29 +86,15 @@ const slides = [
     )
   },
   {
-    key: "slide-7",
+    key: "slide-4",
     content: (
       <GallerySlide
         galleryImageData={{
           event: {
-            title: "Tensorflow Workshop",
+            title: "Git-Github Workshop",
             id: "1"
           },
-          url: "/images/slides/7.jpg"
-        }}
-      />
-    )
-  },
-  {
-    key: "slide-8",
-    content: (
-      <GallerySlide
-        galleryImageData={{
-          event: {
-            title: "Gear Up",
-            id: "1"
-          },
-          url: "/images/slides/8.png"
+          url: "/images/slides/4.jpg"
         }}
       />
     )
@@ -126,17 +112,21 @@ const slides = [
         }}
       />
     )
+  },
+  {
+    key: "slide-7",
+    content: (
+      <GallerySlide
+        galleryImageData={{
+          event: {
+            title: "Tensorflow Workshop",
+            id: "1"
+          },
+          url: "/images/slides/7.jpg"
+        }}
+      />
+    )
   }
 ];
 
-function shuffle(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
-
-const shuffledSlides = shuffle(slides);
-
-export default shuffledSlides;
+export default slides;
