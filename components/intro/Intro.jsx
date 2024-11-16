@@ -140,52 +140,54 @@ function Intro({ isMobile }) {
         </LeftInnerContainer>
       </LeftContainer>
       <RightContainer>
-        <AvatarContainer>
-          <Xwrapper>
-            {avatarElements}
-            <IntersectingPoint id="center" delay={1.2} />
-            {floatingLabelElements}
-            <Xarrow
-              start={ref0}
-              end={"center"}
-              startAnchor={"middle"}
-              endAnchor={"middle"}
-              curveness={0}
-              showHead={false}
-              zIndex={-1}
-              strokeWidth={2}
-              path={"grid"}
-              gridBreak="70%"
-              color={theme.colors.bgTertiary}
-            />
-            <Xarrow
-              start={ref1}
-              end={"center"}
-              startAnchor={"middle"}
-              endAnchor={"middle"}
-              curveness={0}
-              showHead={false}
-              zIndex={-1}
-              strokeWidth={2}
-              path={"grid"}
-              gridBreak="70%"
-              color={theme.colors.bgTertiary}
-            />
-            <Xarrow
-              start={ref2}
-              end={"center"}
-              startAnchor={"middle"}
-              endAnchor={"middle"}
-              curveness={0}
-              showHead={false}
-              zIndex={-1}
-              strokeWidth={2}
-              path={"grid"}
-              gridBreak="70%"
-              color={theme.colors.bgTertiary}
-            />
-          </Xwrapper>
-        </AvatarContainer>
+        <div className="w-full h-full md:ml-48 mt-48 md:mt-0 ml-12">
+          <AvatarContainer>
+            <Xwrapper>
+              {avatarElements}
+              <IntersectingPoint id="center" delay={1.2} />
+              {floatingLabelElements}
+              <Xarrow
+                start={ref0}
+                end={"center"}
+                startAnchor={"middle"}
+                endAnchor={"middle"}
+                curveness={0}
+                showHead={false}
+                zIndex={-1}
+                strokeWidth={2}
+                path={"grid"}
+                gridBreak="70%"
+                color={theme.colors.bgTertiary}
+              />
+              <Xarrow
+                start={ref1}
+                end={"center"}
+                startAnchor={"middle"}
+                endAnchor={"middle"}
+                curveness={0}
+                showHead={false}
+                zIndex={-1}
+                strokeWidth={2}
+                path={"grid"}
+                gridBreak="70%"
+                color={theme.colors.bgTertiary}
+              />
+              <Xarrow
+                start={ref2}
+                end={"center"}
+                startAnchor={"middle"}
+                endAnchor={"middle"}
+                curveness={0}
+                showHead={false}
+                zIndex={-1}
+                strokeWidth={2}
+                path={"grid"}
+                gridBreak="70%"
+                color={theme.colors.bgTertiary}
+              />
+            </Xwrapper>
+          </AvatarContainer>
+        </div>
       </RightContainer>
     </IntroContainer>
   );
