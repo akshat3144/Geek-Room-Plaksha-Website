@@ -40,22 +40,19 @@ function Intro({ isMobile }) {
   const avatarData = [
     {
       url: "/images/events/hero/Event1.jpg",
-      alt: "Web Development Workshop Image",
       borderColor: theme.colors.brandBlue,
       x: 0,
       y: 30
     },
     {
       url: "/images/events/hero/Event2.jpg",
-      alt: "Web Development Workshop Image",
       borderColor: theme.colors.brandGreen,
       x: isMobile ? 190 : 250,
       y: 100
     },
     {
       url: "/images/events/hero/Event3.jpg",
-      alt: "Web Development Workshop Image",
-      borderColor: theme.colors.brandYellow,
+      borderColor: theme.colors.brandRed,
       x: 50,
       y: isMobile ? 210 : 260
     }
@@ -71,13 +68,13 @@ function Intro({ isMobile }) {
 
     {
       label: "Competitions",
-      color: theme.colors.brandRed,
+      color: theme.colors.brandGreen,
       x: isMobile ? 150 : 200,
       y: 30
     },
     {
       label: "Workshops",
-      color: theme.colors.brandGreen,
+      color: theme.colors.brandRed,
       x: isMobile ? 180 : 250,
       y: isMobile ? 260 : 280
     }
@@ -112,7 +109,7 @@ function Intro({ isMobile }) {
         top={label.y}
         left={label.x}
         delay={index}
-        opacity={0.3}
+        opacity={1}
       >
         {label.label}
       </FloatingLabel>
@@ -124,7 +121,7 @@ function Intro({ isMobile }) {
       <LeftContainer>
         <LeftInnerContainer>
           <HeadingContainer>
-            <Typography variant="h1">Why join Geek Room Plaksha ?</Typography>
+            <Typography variant="h1">Why join Us ?</Typography>
           </HeadingContainer>
           <Typography variant="body">
             Geek Room Plaksha is a community dedicated to helping each other get
