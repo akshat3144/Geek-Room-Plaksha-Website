@@ -21,13 +21,17 @@ export default function NumberTicker({
   });
   const isInView = useInView(ref, { once: true, margin: "0px" });
 
+  // Detect if the user is on a phone
+  const isPhone = typeof window !== "undefined" && window.innerWidth <= 768;
+  const adjustedDelay = isPhone ? 1 : delay;
+
   useEffect(() => {
     if (isInView) {
       setTimeout(() => {
         motionValue.set(direction === "down" ? 0 : value);
-      }, delay * 1000);
+      }, adjustedDelay * 1000);
     }
-  }, [motionValue, isInView, delay, value, direction]);
+  }, [motionValue, isInView, adjustedDelay, value, direction]);
 
   useEffect(() => {
     const unsubscribe = springValue.on("change", (latest) => {

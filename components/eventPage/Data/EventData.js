@@ -132,7 +132,7 @@ const staticEventsData = [
   },
   {
     slug: "Git-Github",
-    title: "Git-Github Workshop",
+    title: "Git Github Workshop",
     shortDescription:
       "A beginner-friendly workshop to kickstart your open-source journey with Git and GitHub. Learn version control basics and make your first open-source contribution.",
     thumbnail: "/images/events/git/poster.jpg",
