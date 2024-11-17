@@ -34,7 +34,7 @@ export function ThreeDCardDemo({ title, description, imageUrl, link }) {
               <CardItem
                 translateZ={20}
                 as="button"
-                className="px-3 py-2 rounded-xl text-white text-lg w-full bg-[#4284f4]"
+                className="px-3 py-2 rounded-xl text-white text-lg w-full bg-[#f15b22] hover:shadow-[0_0_0_5px_rgba(241,91,34,0.3)]"
               >
                 Learn More
               </CardItem>
