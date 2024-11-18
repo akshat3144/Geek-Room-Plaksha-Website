@@ -95,7 +95,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
             </AnimatePresence>
           </div>
         </div>
-        <div className="flex justify-between flex-col h-60">
+        <div className="flex justify-between flex-col h-48">
           <motion.div
             key={active}
             initial={{ y: 20, opacity: 0 }}
@@ -122,7 +122,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
               ))}
             </motion.p>
           </motion.div>
-          <div className="flex gap-4 pt-12 md:pt-0">
+          <div className="flex gap-4">
             <button
               onClick={handlePrev}
               className="h-7 w-7 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button"
