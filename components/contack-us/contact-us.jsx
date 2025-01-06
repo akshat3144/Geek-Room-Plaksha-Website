@@ -25,7 +25,7 @@ const ContactForm = () => {
     e.preventDefault();
     try {
       const res = await fetch(
-        "https://geek-room-website-api.onrender.com/api/contact-us/",
+        "https://geek-room-website-api.onrender.com/api/contact-us",
         {
           method: "POST",
           headers: {
