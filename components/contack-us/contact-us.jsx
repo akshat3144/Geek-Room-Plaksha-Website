@@ -24,13 +24,16 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:5000/api/contact-us", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(formData)
-      });
+      const res = await fetch(
+        "https://geek-room-website-api.onrender.com/api/contact-us/",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(formData)
+        }
+      );
       if (res.ok) {
         setResponseMessage("Your message has been sent successfully!");
         setFormData({
