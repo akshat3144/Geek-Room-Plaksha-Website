@@ -11,11 +11,11 @@ const staticEventsData = [
     startDate: "2025-01-28T18:00:00",
     endDate: "2025-01-29T20:00:00",
     venue: "Room 1002",
-    status: "upcoming",
+    status: "ended",
     // registrationLink:
     // "https://practice.geeksforgeeks.org/contest/code-clash-plaksha-university",
-    // resourcesLink:
-    // "https://plakshauniversity1-my.sharepoint.com/...your_shared_resource_link...",
+    resourcesLink:
+      "https://drive.google.com/drive/folders/1-rXXMUQl64datzVighQgSrtDwRTUDe0t?usp=sharing",
     speakers: [
       {
         id: 1,
