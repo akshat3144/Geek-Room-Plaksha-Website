@@ -26,13 +26,20 @@ const staticEventsData = [
       },
       {
         id: 2,
+        name: "Akshat Gupta",
+        profileLink: "https://www.linkedin.com/in/akshat-gupta-840740285/",
+        image: "/images/team/Akshat.png",
+        title: "Teaching Assistant"
+      },
+      {
+        id: 3,
         name: "Maan Kumawat",
         profileLink: "#",
         image: "/images/team/maan.png",
         title: "Teaching Assistant"
       },
       {
-        id: 3,
+        id: 4,
         name: "Armaan Raisinghani",
         profileLink:
           "https://www.linkedin.com/in/armaan-raisinghani-362654240/",
