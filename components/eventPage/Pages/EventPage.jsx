@@ -33,6 +33,8 @@ import isoToDate from "@/utils/isoToDate";
 
 function EventPage({ eventData }) {
   const limit = 400;
+  // Use eventData.isHack to determine the heading, defaulting to false if undefined.
+  const isHack = eventData.isHack || false;
 
   dayjs.extend(utc);
   dayjs.extend(timezone);
@@ -98,7 +100,10 @@ function EventPage({ eventData }) {
               {eventData.speakers != undefined &&
                 eventData.speakers.length > 0 && (
                   <SpeakersContainer>
-                    <Typography variant="h2">Organizers</Typography>
+                    <Typography variant="h2">
+                      {isHack ? "Sponsors" : "Organizers"}
+                    </Typography>
+
                     <SpeakersCardContainer>
                       {speakerElements}
                     </SpeakersCardContainer>
@@ -139,7 +144,6 @@ function EventPage({ eventData }) {
                     Registration
                   </Typography>
                   <Typography variant="h4">
-                    {/* {capitalize(eventData.status)} */}
                     {eventData.status === "upcoming" && capitalize("Open")}
                     {eventData.status === "closed" && capitalize("closed")}
                     {eventData.status === "ended" && capitalize("ended")}
