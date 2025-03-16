@@ -11,7 +11,7 @@ const staticEventsData = [
       "<p>Hosted by E-Cell Plaksha X Geek Room Plaksha, Hack Summit is a 24-hour in-person hackathon that is part of the prestigious E-Summit 'aeternum'. This event brings together talented developers, designers, and problem-solvers from universities across the country to showcase their skills in an intense coding marathon.</p> <p><strong>Why Join? 💡</strong></p> <ul> <li>💰 ₹1,00,000 cash prize pool</li> <li>✨ 6-month Perplexity Pro subscription ($120 each) for all participants</li> <li>🏢 Incubation opportunities at IIT Ropar</li> <li>🎁 Exciting goodies</li> </ul> <p>Don't miss this chance to innovate, collaborate, and win big! 🔥✨</p>",
     startDate: "2025-03-30T14:00:00",
     endDate: "2025-03-31T18:00:00",
-    venue: "Room 1001",
+    venue: "Room 1001, Plaksha University",
     status: "upcoming",
     registrationLink:
       "https://unstop.com/hackathons/hack-summit-aeternum-e-summit25-by-e-cell-plaksha-university-plaksha-university-punjab-1422233",
