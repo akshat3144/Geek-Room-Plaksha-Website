@@ -23,7 +23,6 @@ import {
   SpeakersCardContainer,
   SpeakersContainer,
   Button,
-  HorizontalLine
 } from "./EventPage.styled";
 import Typography from "../../display/typography/Typography";
 import Avatar from "../../avatar/Avatar";
@@ -101,7 +100,7 @@ function EventPage({ eventData }) {
                 eventData.speakers.length > 0 && (
                   <SpeakersContainer>
                     <Typography variant="h2">
-                      {isHack ? "Sponsors" : "Organizers"}
+                      {isHack ? "Partners" : "Organizers"}
                     </Typography>
 
                     <SpeakersCardContainer>
