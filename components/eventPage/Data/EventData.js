@@ -43,7 +43,14 @@ const staticEventsData = [
         profileLink: "https://codecrafters.io/",
         image: "/images/events/Hack-Summit/cc.png",
         title: ""
-      }
+      },
+      {
+        id: 5,
+        name: "Unstop",
+        profileLink: "https://unstop.com/",
+        image: "/images/events/Hack-Summit/unstop.png",
+        title: ""
+      },
     ]
   },
   {
