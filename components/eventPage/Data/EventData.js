@@ -38,6 +38,20 @@ const staticEventsData = [
         title: ""
       },
       {
+        id: 5,
+        name: "ETHIndia",
+        profileLink: "https://ethindia2024.devfolio.co/",
+        image: "/images/events/Hack-Summit/eth.png",
+        title: ""
+      },
+      {
+        id: 5,
+        name: "Unstop",
+        profileLink: "https://unstop.com/",
+        image: "/images/events/Hack-Summit/unstop.jpg",
+        title: ""
+      },
+      {
         id: 4,
         name: "CodeCrafters",
         profileLink: "https://codecrafters.io/",
@@ -46,11 +60,11 @@ const staticEventsData = [
       },
       {
         id: 5,
-        name: "Unstop",
-        profileLink: "https://unstop.com/",
-        image: "/images/events/Hack-Summit/unstop.png",
+        name: "Devfolio",
+        profileLink: "https://devfolio.co/discover",
+        image: "/images/events/Hack-Summit/devfolio.webp",
         title: ""
-      },
+      }
     ]
   },
   {
