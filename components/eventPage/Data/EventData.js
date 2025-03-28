@@ -68,6 +68,48 @@ const staticEventsData = [
     ]
   },
   {
+    slug: "fastapi",
+    title: "FastAPI Workshop",
+    shortDescription:
+      "Master the fundamentals of backend development with GeekRoom Plaksha's FastAPI Workshop! This hands-on session will introduce you to Python, RESTful APIs, and how to build and integrate your own backend services.",
+    thumbnail: "/images/events/fastapi/poster.png",
+    coverPhoto: "/images/events/fastapi/cover.png",
+    description:
+      "<p>Master the fundamentals of backend development with GeekRoom Plaksha's FastAPI Workshop! This hands-on session will introduce you to Python, RESTful APIs, and how to build and integrate your own backend services.</p> <p><strong>Highlights:</strong></p>  <ul>   <li>🐍 Explore the power of <strong>Python</strong> and FastAPI for backend development.</li>   <li>📚 Learn how APIs work and their role in modern applications.</li>   <li>🛠️ Build and deploy your first API in a hands-on session.</li>   <li>💡 Gain insights into integrating APIs with frontend and mobile applications.</li>  <li>🚀 Perfect for beginners looking to dive into backend development.</li>  </ul>",
+    startDate: "2025-03-26T18:00:00",
+    endDate: "2025-03-26T20:00:00",
+    venue: "Room 1002",
+    status: "ended",
+    // registrationLink:
+    // "https://practice.geeksforgeeks.org/contest/code-clash-plaksha-university",
+    resourcesLink:
+      "https://drive.google.com/drive/folders/1De84hh7lT2Fu0rSr_IezR2sZsC1zwBO5?usp=sharing",
+    speakers: [
+      {
+        id: 1,
+        name: "Shreya Khanna",
+        profileLink: "https://www.linkedin.com/in/shreya-khanna-a58a36323/",
+        image: "/images/team/shreya.png",
+        title: "Instructor"
+      },
+      {
+        id: 2,
+        name: "Armaan Raisinghani",
+        profileLink:
+          "https://www.linkedin.com/in/armaan-raisinghani-362654240/",
+        image: "/images/team/armaan.png",
+        title: "Instructor"
+      },
+      {
+        id: 3,
+        name: "Vir Dang",
+        profileLink: "https://www.linkedin.com/in/vir-dang-5573782b1",
+        image: "/images/team/vir.png",
+        title: "Instructor"
+      }
+    ]
+  },
+  {
     slug: "kotlin",
     title: "Kotlin Workshop",
     shortDescription:
