@@ -12,7 +12,7 @@ const staticEventsData = [
     startDate: "2025-03-30T14:00:00",
     endDate: "2025-03-31T18:00:00",
     venue: "Room 1001, Plaksha University",
-    status: "upcoming",
+    status: "ended",
     registrationLink:
       "https://unstop.com/hackathons/hack-summit-aeternum-e-summit25-by-e-cell-plaksha-university-plaksha-university-punjab-1422233",
     speakers: [
