@@ -21,9 +21,7 @@ const teamData = {
         image: "/images/team/raghav.jpg"
       },
       role: "Operations Lead"
-    }
-  ],
-  poc:[
+    },
     {
       id: 4,
       profile: {
@@ -72,6 +70,9 @@ const teamData = {
       },
       role: "Marketing & Design Lead"
     }
+  ],
+  poc:[
+    
   ],
   members: [
     {
