@@ -3,26 +3,61 @@ import { useRouter } from "next/router";
 
 export async function getServerSideProps(context) {
   const { certificateId } = context.params;
-  const baseUrl =
-    process.env.NEXT_PUBLIC_API_URL ||
-    (process.env.NODE_ENV === "production"
-      ? "https://geekroom-plaksha.tech/api"
-      : "http://localhost:5000/api");
+
+  // Get the absolute URL for the API endpoint
+  const baseUrl = process.env.NEXT_PUBLIC_API_URL || "/api";
+
+  // Get the host from the request to construct absolute URL if needed
+  const protocol = context.req.headers["x-forwarded-proto"] || "http";
+  const host =
+    context.req.headers["x-forwarded-host"] || context.req.headers["host"];
+
+  // Construct the API URL, ensuring it's an absolute URL when needed
+  const apiUrl = baseUrl.startsWith("http")
+    ? baseUrl
+    : `${protocol}://${host}${baseUrl}`;
+
+  console.log("API Base URL:", apiUrl);
+  console.log("Certificate ID:", certificateId);
 
   let data = null;
   try {
-    const res = await fetch(`${baseUrl}/certificate/verify/${certificateId}`);
-    if (res.headers.get("content-type")?.includes("application/json")) {
-      data = await res.json();
+    const apiEndpoint = `${apiUrl}/certificate/${certificateId}`;
+    console.log("Attempting to fetch from:", apiEndpoint);
+
+    const res = await fetch(apiEndpoint, {
+      method: "GET",
+      headers: {
+        Accept: "application/json"
+      }
+    });
+
+    console.log("Response status:", res.status);
+
+    if (res.ok) {
+      if (res.headers.get("content-type")?.includes("application/json")) {
+        data = await res.json();
+        console.log("Data received:", data);
+      } else {
+        console.error("Response not JSON:", await res.text());
+        data = {
+          verified: false,
+          message: "Invalid response format from server."
+        };
+      }
     } else {
-      data = { verified: false, message: "Invalid response from server." };
+      console.error("Error response:", res.status);
+      data = { verified: false, message: `Server error: ${res.status}` };
     }
-  } catch {
+  } catch (error) {
+    console.error("Fetch error:", error.message);
     data = {
       verified: false,
-      message: "Could not connect to verification server."
+      message:
+        "Could not connect to verification server. Please try again later."
     };
   }
+
   return { props: { data } };
 }
 
@@ -38,9 +73,14 @@ export default function VerifyCertificate({ data }) {
             THIS CERTIFICATE IS VERIFIED ✅
           </p>
         ) : (
-          <p className="text-red-400 font-semibold text-lg">
-            Certificate not found or invalid ❌
-          </p>
+          <>
+            <p className="text-red-400 font-semibold text-lg">
+              Certificate not found or invalid ❌
+            </p>
+            {data.message && (
+              <p className="text-yellow-300 mt-2">{data.message}</p>
+            )}
+          </>
         )}
       </div>
 
@@ -69,9 +109,7 @@ export default function VerifyCertificate({ data }) {
               )}
               {data.certificate.teamName && (
                 <p>
-                  <span className="font-semibold text-gray-300">
-                    TEAM:
-                  </span>{" "}
+                  <span className="font-semibold text-gray-300">TEAM:</span>{" "}
                   {data.certificate.teamName}
                 </p>
               )}
