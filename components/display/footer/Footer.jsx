@@ -48,12 +48,28 @@ function Footer({ toggleTheme, isDarkMode }) {
   }, []);
 
   return (
-    <FooterContainer style={{marginTop: "2rem"}}>
+    <FooterContainer
+      style={{
+        marginTop: "2rem",
+        padding: isMobile ? "2rem 1rem 1rem" : "3rem 2rem 1.5rem"
+      }}
+    >
       <FooterSection>
         <LogoWrapper>
-          <LogoContainer>
+          <LogoContainer
+            style={{
+              width: isMobile ? "100%" : "80%",
+              justifyContent: isMobile ? "center" : "start"
+            }}
+          >
             <Link href="/">
-              <div style={{ width: "100%", maxWidth: "250px", height: "auto" }}>
+              <div
+                style={{
+                  width: "100%",
+                  maxWidth: isMobile ? "200px" : "250px",
+                  height: "auto"
+                }}
+              >
                 <Image
                   src={isDarkMode ? DarkModeLogo : LightModeLogo}
                   alt={"GR Logo"}
@@ -65,12 +81,23 @@ function Footer({ toggleTheme, isDarkMode }) {
               </div>
             </Link>
           </LogoContainer>
-          <Typography variant="bodySmall" subdued style={{ marginTop: "1rem" }}>
+          <Typography
+            variant="bodySmall"
+            subdued
+            style={{
+              marginTop: "1rem",
+              width: isMobile ? "100%" : "auto",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: isMobile ? "center" : "flex-start"
+            }}
+          >
             <div
               style={{
                 display: "flex",
                 alignItems: "center",
-                marginBottom: "0.5rem"
+                marginBottom: "0.5rem",
+                justifyContent: isMobile ? "center" : "flex-start"
               }}
             >
               <LocationOnIcon
@@ -78,7 +105,13 @@ function Footer({ toggleTheme, isDarkMode }) {
               />
               Mohali, Punjab - 140306
             </div>
-            <div style={{ display: "flex", alignItems: "center" }}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: isMobile ? "center" : "flex-start"
+              }}
+            >
               <EmailIcon style={{ fontSize: "1rem", marginRight: "0.5rem" }} />
               <Link
                 href="mailto:geekroomplaksha@gmail.com"
@@ -96,7 +129,7 @@ function Footer({ toggleTheme, isDarkMode }) {
 
         <FooterSocials>
           <Typography
-            variant="body"
+            variant={isMobile ? "bodyEmphasized" : "body"}
             style={{
               textAlign: "center",
               fontWeight: "600",
@@ -116,7 +149,7 @@ function Footer({ toggleTheme, isDarkMode }) {
               <LinkedInIcon
                 style={{ margin: "0 10px" }}
                 sx={{
-                  fontSize: 28,
+                  fontSize: isMobile ? 24 : 28,
                   transition: "all 0.2s ease-in-out",
                   "&:hover": {
                     transform: "translate(0, -3px)",
@@ -134,7 +167,7 @@ function Footer({ toggleTheme, isDarkMode }) {
               <InstagramIcon
                 style={{ margin: "0 10px" }}
                 sx={{
-                  fontSize: 28,
+                  fontSize: isMobile ? 24 : 28,
                   transition: "all 0.2s ease-in-out",
                   "&:hover": {
                     transform: "translate(0, -3px)",
@@ -152,7 +185,7 @@ function Footer({ toggleTheme, isDarkMode }) {
               <WhatsAppIcon
                 style={{ margin: "0 10px" }}
                 sx={{
-                  fontSize: 28,
+                  fontSize: isMobile ? 24 : 28,
                   transition: "all 0.2s ease-in-out",
                   "&:hover": {
                     transform: "translate(0, -3px)",
@@ -170,7 +203,7 @@ function Footer({ toggleTheme, isDarkMode }) {
               <GitHubIcon
                 style={{ margin: "0 10px" }}
                 sx={{
-                  fontSize: 28,
+                  fontSize: isMobile ? 24 : 28,
                   transition: "all 0.2s ease-in-out",
                   "&:hover": {
                     transform: "translate(0, -3px)",
@@ -190,17 +223,33 @@ function Footer({ toggleTheme, isDarkMode }) {
           style={{
             paddingBottom: "0.8rem",
             paddingRight: isMobile ? 0 : "initial",
-            textAlign: "center"
+            textAlign: "center",
+            paddingLeft: isMobile ? "1rem" : 0,
+            paddingRight: isMobile ? "1rem" : 0
           }}
         >
-          <Typography variant="body">
-            Want to contribute to this website?{" "}
-            <Link
-              href="https://github.com/Geek-Room-Plaksha/Geek-Room-Plaksha-Website"
-              style={{ color: "#f15b22", textDecoration: "none" }}
-            >
-              Join us on GitHub
-            </Link>
+          <Typography variant={isMobile ? "bodySmall" : "body"}>
+            {isMobile ? (
+              <>
+                Want to contribute?{" "}
+                <Link
+                  href="https://github.com/Geek-Room-Plaksha/Geek-Room-Plaksha-Website"
+                  style={{ color: "#f15b22", textDecoration: "none" }}
+                >
+                  Join us on GitHub
+                </Link>
+              </>
+            ) : (
+              <>
+                Want to contribute to this website?{" "}
+                <Link
+                  href="https://github.com/Geek-Room-Plaksha/Geek-Room-Plaksha-Website"
+                  style={{ color: "#f15b22", textDecoration: "none" }}
+                >
+                  Join us on GitHub
+                </Link>
+              </>
+            )}
           </Typography>
         </div>
       </FooterMeta>
