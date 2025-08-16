@@ -10,6 +10,13 @@ export const config = {
   }
 };
 
+// Define the maximum file size (1 MB in bytes)
+const MAX_FILE_SIZE = 1 * 1024 * 1024; // 1 MB
+
+function isValidPlakshaEmail(email) {
+  return email.endsWith("@plaksha.edu.in");
+}
+
 const processFile = async (file) => {
   // The file is actually coming as an array in some cases - handle both cases
   const fileToProcess = Array.isArray(file) ? file[0] : file;
@@ -25,6 +32,12 @@ const processFile = async (file) => {
     const fileBuffer = Buffer.from(
       await fs.promises.readFile(fileToProcess.filepath)
     );
+
+    // Check file size
+    if (fileBuffer.length > MAX_FILE_SIZE) {
+      console.error("File too large:", fileBuffer.length, "bytes (max: 1 MB)");
+      return { error: "File size exceeds the 1 MB limit." };
+    }
 
     // Determine the mime type based on the file extension
     const fileName = fileToProcess.originalFilename || "";
@@ -50,10 +63,10 @@ const processFile = async (file) => {
       fileBuffer.length,
       "bytes"
     );
-    return dataUri;
+    return { dataUri };
   } catch (error) {
     console.error("Error processing file:", error);
-    return null;
+    return { error: "Error processing file." };
   }
 };
 
@@ -65,13 +78,25 @@ export default async function handler(req, res) {
   try {
     await dbConnect();
 
-    const form = formidable({ multiples: true }); // Enable multiples to handle arrays better
+    // Configure formidable with size limits
+    const form = formidable({
+      multiples: true,
+      maxFileSize: MAX_FILE_SIZE // Set maximum file size here
+    });
 
     return new Promise((resolve, reject) => {
       form.parse(req, async (err, fields, files) => {
         if (err) {
           console.error("Form parsing error:", err);
-          res.status(500).json({ error: "Error parsing form" });
+          // Check if the error is related to file size
+          if (err.code === 1009) {
+            // Formidable error code for maxFileSize exceeded
+            res
+              .status(413)
+              .json({ error: "Resume file exceeds the 1 MB size limit." });
+          } else {
+            res.status(500).json({ error: "Error parsing form" });
+          }
           return resolve();
         }
 
@@ -86,20 +111,42 @@ export default async function handler(req, res) {
           const whyJoin = Array.isArray(fields.whyJoin)
             ? fields.whyJoin[0]
             : fields.whyJoin;
+          const skills = Array.isArray(fields.skills)
+            ? fields.skills[0]
+            : fields.skills;
+          const teamPreference = Array.isArray(fields.teamPreference)
+            ? fields.teamPreference[0]
+            : fields.teamPreference;
 
-          console.log("Processing fields:", { name, email, whyJoin });
+          console.log("Processing fields:", {
+            name,
+            email,
+            whyJoin,
+            skills,
+            teamPreference
+          });
 
           // Validate required fields
-          if (!name || !email || !whyJoin) {
+          if (!name || !email || !whyJoin || !skills || !teamPreference) {
             res.status(400).json({ error: "Missing required fields" });
             return resolve();
+          }
+
+          // Validate email domain
+          if (!isValidPlakshaEmail(email)) {
+            return res.status(400).json({
+              success: false,
+              error: "Please use your Plaksha Email"
+            });
           }
 
           // Process application data
           const applicationData = {
             name,
             email,
-            whyJoin
+            whyJoin,
+            skills,
+            teamPreference
           };
 
           // Handle resume upload if provided
@@ -112,12 +159,17 @@ export default async function handler(req, res) {
               fileToProcess.originalFilename
             );
 
-            const dataUri = await processFile(files.resume);
-            if (dataUri) {
+            const result = await processFile(files.resume);
+            if (result.error) {
+              res.status(413).json({ error: result.error });
+              return resolve();
+            }
+
+            if (result.dataUri) {
               console.log(
                 "Resume processed successfully and ready for storage"
               );
-              applicationData.resumeUrl = dataUri;
+              applicationData.resumeUrl = result.dataUri;
               applicationData.resumeFileName = fileToProcess.originalFilename;
               applicationData.resumeFileType =
                 fileToProcess.mimetype ||

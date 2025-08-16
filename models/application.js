@@ -19,6 +19,17 @@ const ApplicationSchema = new mongoose.Schema(
       required: [true, "Please explain why you want to join"],
       trim: true
     },
+    skills: {
+      type: String,
+      required: [true, "Please provide your skills and experience"],
+      trim: true
+    },
+    teamPreference: {
+      type: String,
+      required: [true, "Please select a team preference"],
+      enum: ["Tech", "Design", "Content", "Marketing"],
+      trim: true
+    },
     resumeUrl: {
       type: String,
       trim: true,

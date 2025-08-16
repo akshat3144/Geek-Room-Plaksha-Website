@@ -192,6 +192,22 @@ const AdminApplications = () => {
                   </p>
                 </div>
 
+                <div className="mb-4">
+                  <h4 className="text-lg font-medium mb-2">
+                    Skills and Experience:
+                  </h4>
+                  <p className="bg-gray-50 dark:bg-neutral-900/50 p-3 rounded-md whitespace-pre-wrap">
+                    {application.skills}
+                  </p>
+                </div>
+
+                <div className="mb-4">
+                  <h4 className="text-lg font-medium mb-2">Team Preference:</h4>
+                  <p className="bg-gray-50 dark:bg-neutral-900/50 p-3 rounded-md">
+                    {application.teamPreference}
+                  </p>
+                </div>
+
                 {application.resumeUrl && (
                   <div className="mb-4">
                     <h4 className="text-lg font-medium mb-2">Resume:</h4>
