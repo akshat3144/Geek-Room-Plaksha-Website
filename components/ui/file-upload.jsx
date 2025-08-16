@@ -30,29 +30,13 @@ export const FileUpload = ({ onChange }) => {
   const [isUploading, setIsUploading] = useState(false);
   const fileInputRef = useRef(null);
 
-  const uploadToGoogleDrive = async (file) => {
-    const formData = new FormData();
-    formData.append("file", file);
-
-    const response = await fetch("/api/upload", {
-      method: "POST",
-      body: formData
-    });
-
-    if (!response.ok) {
-      throw new Error("Upload to Google Drive failed");
-    }
-
-    const result = await response.json();
-    return result.data;
-  };
-
   const handleFileChange = async (newFiles) => {
     setIsUploading(true);
     try {
-      setFiles((prevFiles) => [...prevFiles, ...newFiles]);
+      // Replace existing files with new files instead of appending
+      setFiles(newFiles);
 
-      // Simply pass the raw files to the parent component
+      // Notify parent component
       setIsUploading(false);
       onChange && onChange(newFiles);
     } catch (error) {
@@ -62,10 +46,21 @@ export const FileUpload = ({ onChange }) => {
     }
   };
 
+  const handleRemoveFile = (e, index) => {
+    e.stopPropagation(); // Prevent click from bubbling to parent
+
+    // Clear all files
+    setFiles([]);
+
+    // Notify parent component with empty array
+    onChange && onChange([]);
+  };
+
   const handleClick = () => {
     fileInputRef.current?.click();
   };
 
+  // Update the dropzone configuration to enforce single file
   const { getRootProps, isDragActive } = useDropzone({
     multiple: false,
     noClick: true,
@@ -105,7 +100,11 @@ export const FileUpload = ({ onChange }) => {
           ref={fileInputRef}
           id="file-upload-handle"
           type="file"
-          onChange={(e) => handleFileChange(Array.from(e.target.files || []))}
+          onChange={(e) => {
+            // When new file is selected, replace existing file
+            const fileArray = Array.from(e.target.files || []);
+            handleFileChange(fileArray);
+          }}
           className="hidden"
         />
         <div className="flex flex-col items-center justify-center">
@@ -139,8 +138,26 @@ export const FileUpload = ({ onChange }) => {
                           {truncateFileName(file.name)}
                         </div>
                       </div>
-                      <div className="text-sm text-gray-500 dark:text-gray-400">
-                        {formatFileSize(file.size)}
+                      <div className="flex items-center gap-2">
+                        <div className="text-sm text-gray-500 dark:text-gray-400">
+                          {formatFileSize(file.size)}
+                        </div>
+                        {/* Add remove button */}
+                        <button
+                          onClick={(e) => handleRemoveFile(e, idx)}
+                          className="text-gray-500 hover:text-red-500 transition-colors"
+                          aria-label="Remove file"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            viewBox="0 0 16 16"
+                          >
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                          </svg>
+                        </button>
                       </div>
                     </div>
                     <div className="mt-1 text-xs text-gray-500 dark:text-gray-400">

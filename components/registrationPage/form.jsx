@@ -61,7 +61,7 @@ const ApplicationForm = () => {
     setResumeError(""); // Clear any previous errors
 
     if (files && files.length > 0) {
-      const file = files[0];
+      const file = files[0]; // Take only the first file
       // Check file size immediately when selected
       if (file.size > 1048576) {
         // 1MB = 1048576 bytes
@@ -79,6 +79,10 @@ const ApplicationForm = () => {
           (file.size / 1024 / 1024).toFixed(2) + "MB"
         );
       }
+    } else {
+      // Handle case when files array is empty (file was removed)
+      setResume(null);
+      console.log("Resume removed");
     }
   };
 
