@@ -180,10 +180,10 @@ const ApplicationForm = () => {
       {success ? (
         <div className="text-center py-8 w-full">
           <Typography variant="h2" className="text-green-500 mb-4">
-            Application Submitted!
+            Application Submitted
           </Typography>
           <Typography variant="body" className="text-white">
-            Thank you for applying to join Geek Room Plaksha! We'll review your
+            Thank you for applying to join Geek Room Plaksha, we'll review your
             application and get back to you soon.
           </Typography>
         </div>
@@ -305,9 +305,11 @@ const ApplicationForm = () => {
               <div
                 className={`bg-transparent border ${
                   resumeError ? "border-red-500" : "border-[#00acb2]"
-                } rounded file-box h-[220px] flex items-center justify-center`}
+                } rounded file-box h-[220px] flex items-center justify-center overflow-hidden`}
               >
-                <FileUpload onChange={handleResumeUpload} />
+                <div className="w-full max-w-full">
+                  <FileUpload onChange={handleResumeUpload} />
+                </div>
               </div>
               <div className="mt-2 flex items-center justify-between">
                 <p className="text-sm text-gray-400 upload-text">
