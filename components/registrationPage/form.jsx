@@ -187,7 +187,7 @@ const ApplicationForm = () => {
             Application Submitted
           </Typography>
           <Typography variant="body" className="text-white">
-            Thank you for applying to join Geek Room Plaksha, we'll review your
+            Thank you for applying to join Geek Room Plaksha, we&apos;ll review your
             application and get back to you soon.
           </Typography>
         </div>
