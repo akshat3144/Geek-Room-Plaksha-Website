@@ -174,12 +174,7 @@ const ApplicationForm = () => {
 
   return (
     <div
-      className="flex justify-center items-center py-8 md:py-12 application-form-container"
-      style={{
-        backgroundColor: "rgba(255, 255, 255, 0.05)",
-        marginBottom: "50px",
-        borderRadius: "8px"
-      }}
+      className="flex justify-center items-center py-8 md:py-12 application-form-container mb-[50px] rounded-lg bg-[#ffffff0d] md:w-[175vh]"
     >
       {success ? (
         <div className="text-center py-8 w-full">
