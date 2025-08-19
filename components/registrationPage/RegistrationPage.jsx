@@ -41,7 +41,7 @@ const RegistrationPage = () => {
             disabled={!applicationData.isOpen}
             onClick={() => applicationData.isOpen && setShowForm(true)}
           >
-              Applications are closed. Stay tuned
+              Applications are currently closed.
           </ApplyButton>
         </ActionsContainer>
       </ApplyNowContainer>
