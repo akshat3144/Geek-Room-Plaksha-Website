@@ -35,7 +35,7 @@ const RegistrationPage = () => {
       </TitleContainer>
       <MarqueeDemo></MarqueeDemo>
 
-      {/* <ApplyNowContainer>
+      <ApplyNowContainer>
         <ActionsContainer>
           <ApplyButton
             disabled={!applicationData.isOpen}
@@ -44,11 +44,11 @@ const RegistrationPage = () => {
               Applications are closed. Stay tuned
           </ApplyButton>
         </ActionsContainer>
-      </ApplyNowContainer> */}
+      </ApplyNowContainer>
 
-      <div className="mt-12">
+      {/* <div className="mt-12">
         <ApplicationForm />
-      </div>
+      </div> */}
     </RegistrationPageContainer>
   );
 };
